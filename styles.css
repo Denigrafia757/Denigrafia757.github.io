@@ -1198,7 +1198,8 @@ h3 {
 
   .catalog-grid,
   .pricing-grid,
-  .social-grid {
+  .social-grid,
+  .safety-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1224,6 +1225,15 @@ h3 {
       "photo"
       "copy"
       "layout";
+  }
+
+  .frame-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .frame-photos {
+    grid-template-rows: repeat(2, minmax(140px, 1fr));
   }
 
   .about-stats {
@@ -1343,7 +1353,10 @@ h3 {
 
   .catalog-grid,
   .pricing-grid,
-  .social-grid {
+  .social-grid,
+  .safety-grid,
+  .about-stats,
+  .about-grid {
     grid-template-columns: 1fr;
   }
 
