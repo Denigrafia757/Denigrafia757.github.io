@@ -883,60 +883,49 @@ h3 {
 
 .examples-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
 .example-item {
-  position: relative;
-  min-height: 240px;
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
   margin: 0;
   overflow: hidden;
   border-radius: var(--radius);
-  background: #d7ddd8;
+  background: #fff;
+  border: 1px solid rgba(41, 75, 61, 0.12);
   box-shadow: var(--shadow);
 }
 
 .example-item img {
   display: block;
   width: 100%;
-  height: 280px;
+  height: 340px;
   object-fit: cover;
-  transition: transform 500ms ease;
-}
-
-.example-item:hover img {
-  transform: scale(1.035);
 }
 
 .example-item::before {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  z-index: 1;
-  padding: 5px 10px;
-  color: #fff;
+  display: block;
+  order: 2;
+  width: fit-content;
+  margin: 18px 20px 0;
+  padding: 4px 9px;
+  color: var(--forest);
   font-size: 0.74rem;
   font-weight: 800;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   content: "Пример проекта";
-  background: rgba(41, 75, 61, 0.82);
+  background: rgba(41, 75, 61, 0.08);
   border-radius: 999px;
-  backdrop-filter: blur(6px);
 }
 
 .example-item figcaption {
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 16px;
-  padding: 14px 16px;
-  color: #fff;
-  background: rgba(18, 21, 20, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 7px;
-  backdrop-filter: blur(14px);
+  order: 3;
+  padding: 10px 20px 22px;
+  color: var(--ink);
 }
 
 .example-item strong,
@@ -945,9 +934,10 @@ h3 {
 }
 
 .example-item span {
-  margin-top: 2px;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.88rem;
+  margin-top: 5px;
+  color: rgba(23, 23, 23, 0.62);
+  font-size: 0.92rem;
+  line-height: 1.45;
 }
 
 .plan-grid {
