@@ -1,19 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Домстрой — строительство домов под ключ в Москве и Московской области</title>
-<meta name="description" content="Домстрой — строительство загородных домов под ключ в Москве и Московской области. Реальные проекты, отделка, понятный процесс строительства и индивидуальный расчёт.">
-<meta property="og:title" content="Домстрой — дома, в которых хочется жить">
-<meta property="og:description" content="Проектирование и строительство домов под ключ. Индивидуальный расчёт и контроль на каждом этапе.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://домстроймск.рф/1000024720.jpg">
-<meta name="theme-color" content="#0a0a09">
-<meta property="og:url" content="https://домстроймск.рф/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<meta content="Домстрой — строительство загородных домов под ключ в Москве и Московской области. Реальные проекты, отделка, понятный процесс строительства и индивидуальный расчёт." name="description"/>
+<meta content="Домстрой — дома, в которых хочется жить" property="og:title"/>
+<meta content="Проектирование и строительство домов под ключ. Индивидуальный расчёт и контроль на каждом этапе." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://домстроймск.рф/1000024720.jpg" property="og:image"/>
+<meta content="#0a0a09" name="theme-color"/>
+<meta content="https://домстроймск.рф/" property="og:url"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--bg:#0a0a09;--bg2:#11110f;--card:#151512;--gold:#d9b56b;--gold2:#f1d39a;--text:#f5f2eb;--muted:#aaa69d;--line:rgba(255,255,255,.12);--max:1320px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,Arial,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}img{display:block;width:100%;object-fit:cover}.container{width:min(calc(100% - 64px),var(--max));margin:auto}.eyebrow,.kicker{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
@@ -278,71 +279,97 @@ body {
     max-width: 205px;
   }
 }
+
+/* FINAL IMAGE + MOBILE POLISH */
+figure.tile{margin:0}
+.tile-caption{display:none!important}
+.tile:after{display:none!important}
+@media(max-width:900px){
+  .gallery-grid .tile{min-height:0!important;height:auto!important;aspect-ratio:auto!important;overflow:hidden}
+  .gallery-grid .tile img{display:block;width:100%;height:auto!important;min-height:0!important;max-height:none!important;object-fit:contain!important;object-position:center!important;transform:none!important;background:#111}
+  .gallery-grid .tile:hover img{transform:none!important}
+  .split-image{min-height:0!important;height:auto!important;overflow:hidden}
+  .split-image img{display:block;width:100%;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important}
+  .video-wrap{min-height:0!important}
+  .video-wrap video{width:100%;height:auto!important;aspect-ratio:16/9;object-fit:contain!important;background:#000}
+}
+@media(max-width:520px){
+  .gallery-grid{display:block!important}
+  .gallery-grid .tile{margin:0 0 12px 0!important}
+  .gallery-grid .tile:last-child{margin-bottom:0!important}
+  .section-head{margin-bottom:30px}
+  .section-head h2{font-size:clamp(38px,10.5vw,52px);line-height:1.03}
+  .section-head>p{font-size:13px;line-height:1.6}
+  .split-image img{width:100%;height:auto!important}
+  .video-copy{position:relative;left:auto;bottom:auto;padding:28px 16px;background:#0a0a09}
+  .video-copy h2{font-size:38px}
+  .video-overlay{display:none}
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Домстрой","url":"https://домстроймск.рф/","telephone":"+7 917 333-79-28","areaServed":["Москва","Московская область"],"description":"Проектирование и строительство частных домов под ключ в Москве и Московской области."}</script></head>
 <body>
 <header class="header" id="header">
-  <a href="#top" aria-label="Домстрой"><img class="logo" src="logo-domstroy-light.png" alt="Домстрой"></a>
-  <nav class="nav"><a href="#projects">Проекты</a><a href="#interiors">Интерьеры</a><a href="#process">Этапы</a><a href="#construction">Видео</a><a href="#finance">Финансирование</a><a href="#faq">FAQ</a></nav>
-  <a class="head-cta js-lead" href="#contact">Получить расчёт</a><button class="burger" aria-label="Меню">☰</button>
+<a aria-label="Домстрой" href="#top"><img alt="Домстрой" class="logo" src="logo-domstroy-light.png"/></a>
+<nav class="nav"><a href="#projects">Проекты</a><a href="#interiors">Интерьеры</a><a href="#process">Этапы</a><a href="#construction">Видео</a><a href="#finance">Финансирование</a><a href="#faq">FAQ</a></nav>
+<a class="head-cta js-lead" href="#contact">Получить расчёт</a><button aria-label="Меню" class="burger">☰</button>
 </header>
-<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <a href="#projects">Проекты</a><a href="#interiors">Интерьеры</a><a href="#process">Этапы</a><a href="#construction">Видео</a><a href="#finance">Финансирование</a><a href="#faq">FAQ</a><a class="js-lead" href="#contact">Получить консультацию →</a>
+<div aria-hidden="true" class="mobile-menu" id="mobileMenu">
+<a href="#projects">Проекты</a><a href="#interiors">Интерьеры</a><a href="#process">Этапы</a><a href="#construction">Видео</a><a href="#finance">Финансирование</a><a href="#faq">FAQ</a><a class="js-lead" href="#contact">Получить консультацию →</a>
 </div>
 <main id="top">
 <section class="hero">
-  <div class="hero-media"><img src="real-frame-house-evening.jpg" alt="Современный загородный дом Домстрой" fetchpriority="high"></div>
-  <div class="container hero-content">
-    <div class="eyebrow">СОВРЕМЕННЫЕ ДОМА · МОСКВА И МО</div>
-    <h1>Дома,<br><span>в которых хочется жить.</span></h1>
-    <p class="hero-copy">Проектируем и строим загородные дома под ключ. От идеи и проекта до отделки и передачи ключей — с понятным процессом и контролем качества.</p>
-    <div class="actions"><a class="btn btn-gold js-lead" href="#contact">Рассчитать строительство <b>→</b></a><a class="btn btn-outline" href="#projects">Посмотреть дома</a></div>
-    <div class="hero-trust"><div><strong>Система</strong><span>стройка под контролем</span></div><div><strong>Под ключ</strong><span>один ответственный контур</span></div><div><strong>От 70 м²</strong><span>строим загородные дома</span></div></div>
-  </div><div class="hero-scroll">SCROLL ↓</div>
+<div class="hero-media"><img alt="Современный загородный дом Домстрой" fetchpriority="high" src="real-frame-house-evening.jpg"/></div>
+<div class="container hero-content">
+<div class="eyebrow">СОВРЕМЕННЫЕ ДОМА · МОСКВА И МО</div>
+<h1>Дома,<br/><span>в которых хочется жить.</span></h1>
+<p class="hero-copy">Проектируем и строим загородные дома под ключ. От идеи и проекта до отделки и передачи ключей — с понятным процессом и контролем качества.</p>
+<div class="actions"><a class="btn btn-gold js-lead" href="#contact">Рассчитать строительство <b>→</b></a><a class="btn btn-outline" href="#projects">Посмотреть дома</a></div>
+<div class="hero-trust"><div><strong>Система</strong><span>стройка под контролем</span></div><div><strong>Под ключ</strong><span>один ответственный контур</span></div><div><strong>От 70 м²</strong><span>строим загородные дома</span></div></div>
+</div><div class="hero-scroll">SCROLL ↓</div>
 </section>
 <section class="intro section"><div class="container intro-grid"><div class="kicker">01 / ФИЛОСОФИЯ</div><div><h2>Строительство должно приносить <em>уверенность,</em> а не стресс.</h2><p>Мы выстраиваем строительство как систему: проект, смета, договор, стройка, контроль и передача ключей. Вы понимаете, что происходит на каждом этапе.</p><a class="text-link" href="#process">Посмотреть процесс строительства →</a></div></div></section>
-<section class="section benefits"><div class="container"><div class="section-head"><div><div class="kicker">02 / ПОЧЕМУ ДОМСТРОЙ</div><h2>Меньше неопределённости.<br><em>Больше контроля.</em></h2></div><p>До начала работ разбираем задачу, участок и формат дома. Дальше двигаемся по согласованным этапам, без лишней суеты.</p></div><div class="benefits-grid"><article class="benefit"><b>01 / ПРОЦЕСС</b><h3>Понятный план</h3><p>От первой консультации до передачи ключей — последовательность работ понятна заранее.</p></article><article class="benefit"><b>02 / КОМПЛЕКТАЦИЯ</b><h3>Один контур</h3><p>Проект, строительство и отделка рассматриваются как единая задача, а не набор разрозненных подрядчиков.</p></article><article class="benefit"><b>03 / КОНТРОЛЬ</b><h3>Внимание к деталям</h3><p>Следим за качеством выполнения работ и соблюдением согласованной технологии.</p></article><article class="benefit"><b>04 / ФИНАНСЫ</b><h3>Расчёт под задачу</h3><p>Разбираем доступные способы финансирования и считаем проект под ваши исходные данные.</p></article></div></div></section>
-<section class="section dark" id="projects"><div class="container"><div class="section-head"><div><div class="kicker">03 / РЕАЛИЗОВАННЫЕ ДОМА</div><h2>Реальные дома.<br><em>Реальные детали.</em></h2></div><p>Показываем не рендеры, а реальные результаты: фасады, входные группы, благоустройство и архитектурные решения.</p></div>
+<section class="section benefits"><div class="container"><div class="section-head"><div><div class="kicker">02 / ПОЧЕМУ ДОМСТРОЙ</div><h2>Меньше неопределённости.<br/><em>Больше контроля.</em></h2></div><p>До начала работ разбираем задачу, участок и формат дома. Дальше двигаемся по согласованным этапам, без лишней суеты.</p></div><div class="benefits-grid"><article class="benefit"><b>01 / ПРОЦЕСС</b><h3>Понятный план</h3><p>От первой консультации до передачи ключей — последовательность работ понятна заранее.</p></article><article class="benefit"><b>02 / КОМПЛЕКТАЦИЯ</b><h3>Один контур</h3><p>Проект, строительство и отделка рассматриваются как единая задача, а не набор разрозненных подрядчиков.</p></article><article class="benefit"><b>03 / КОНТРОЛЬ</b><h3>Внимание к деталям</h3><p>Следим за качеством выполнения работ и соблюдением согласованной технологии.</p></article><article class="benefit"><b>04 / ФИНАНСЫ</b><h3>Расчёт под задачу</h3><p>Разбираем доступные способы финансирования и считаем проект под ваши исходные данные.</p></article></div></div></section>
+<section class="section dark" id="projects"><div class="container"><div class="section-head"><div><div class="kicker">03 / РЕАЛИЗОВАННЫЕ ДОМА</div><h2>Реальные дома.<br/><em>Реальные детали.</em></h2></div><p>Показываем не рендеры, а реальные результаты: фасады, входные группы, благоустройство и архитектурные решения.</p></div>
 <div class="gallery-grid">
-<figure class="tile"><img src="1000024720.jpg" alt="Фасад готового дома"><div class="tile-caption"><strong>Современная архитектура</strong><span>Фасад · входная группа · благоустройство</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024723.jpg" alt="Фасад дома" loading="lazy"><div class="tile-caption"><strong>Продуманный фасад</strong><span>Окна · кровля · отделка</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024778.jpg" alt="Кирпичный дом"><div class="tile-caption"><strong>Кирпичный дом</strong><span>Материалы · архитектура · детали</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024725.jpg" alt="Дом среди природы"><div class="tile-caption"><strong>Дом в окружении природы</strong><span>Архитектура и участок</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024779.jpg" alt="Современный фасад"><div class="tile-caption"><strong>Индивидуальный проект</strong><span>Фасад · терраса · благоустройство</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024777.jpg" alt="Дом с отделкой"><div class="tile-caption"><strong>Отделка фасада</strong><span>Фактура · цвет · долговечные решения</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024724.jpg" alt="Фасад дома крупным планом"><div class="tile-caption"><strong>Детали, которые создают образ</strong><span>Окна · вход · материалы</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024776.jpg" alt="Загородный дом"><div class="tile-caption"><strong>Готовый дом</strong><span>Экстерьер · территория</span></div></figure>
+<figure class="tile"><img alt="Фасад готового дома" src="1000024720.jpg"/></figure>
+<figure class="tile"><img alt="Фасад дома" loading="lazy" src="1000024723.jpg"/></figure>
+<figure class="tile"><img alt="Кирпичный дом" loading="lazy" src="1000024778.jpg"/></figure>
+<figure class="tile"><img alt="Дом среди природы" loading="lazy" src="1000024725.jpg"/></figure>
+<figure class="tile"><img alt="Современный фасад" loading="lazy" src="1000024779.jpg"/></figure>
+<figure class="tile"><img alt="Дом с отделкой" loading="lazy" src="1000024777.jpg"/></figure>
+<figure class="tile"><img alt="Фасад дома крупным планом" loading="lazy" src="1000024724.jpg"/></figure>
+<figure class="tile"><img alt="Загородный дом" loading="lazy" src="1000024776.jpg"/></figure>
 </div></div></section>
-<section class="section" id="interiors"><div class="split"><div class="split-image"><img loading="lazy" src="1000024766.jpg" alt="Интерьер гостиной"></div><div class="split-copy"><div class="kicker">04 / ИНТЕРЬЕРЫ И ОТДЕЛКА</div><h2>Качество,<br><em>которое видно.</em></h2><p>Показываем реальные интерьеры готовых домов — от гостиных и кухонь до лестниц, санузлов и технических помещений.</p><ul class="checks"><li>Чистовая и предчистовая отделка</li><li>Продуманные планировки и освещение</li><li>Работа с материалами и деталями</li><li>Инженерные решения внутри дома</li></ul><a class="btn btn-outline" href="#gallery">Смотреть отделку</a></div></div></section>
-<section class="section dark" id="gallery"><div class="container"><div class="section-head"><div><div class="kicker">05 / ПРОСТРАНСТВА</div><h2>Дом раскрывается<br><em>в деталях.</em></h2></div><p>Собрали отдельную галерею интерьеров и отделки, чтобы можно было увидеть уровень результата до разговора с менеджером.</p></div>
+<section class="section" id="interiors"><div class="split"><div class="split-image"><img alt="Интерьер гостиной" loading="lazy" src="1000024766.jpg"/></div><div class="split-copy"><div class="kicker">04 / ИНТЕРЬЕРЫ И ОТДЕЛКА</div><h2>Качество,<br/><em>которое видно.</em></h2><p>Показываем реальные интерьеры готовых домов — от гостиных и кухонь до лестниц, санузлов и технических помещений.</p><ul class="checks"><li>Чистовая и предчистовая отделка</li><li>Продуманные планировки и освещение</li><li>Работа с материалами и деталями</li><li>Инженерные решения внутри дома</li></ul><a class="btn btn-outline" href="#gallery">Смотреть отделку</a></div></div></section>
+<section class="section dark" id="gallery"><div class="container"><div class="section-head"><div><div class="kicker">05 / ПРОСТРАНСТВА</div><h2>Дом раскрывается<br/><em>в деталях.</em></h2></div><p>Собрали отдельную галерею интерьеров и отделки, чтобы можно было увидеть уровень результата до разговора с менеджером.</p></div>
 <div class="gallery-grid">
-<figure class="tile"><img loading="lazy" src="1000024765.jpg" alt="Спальня"><div class="tile-caption"><strong>Спальня</strong><span>Отделка · свет · текстуры</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024767.jpg" alt="Кухня и столовая"><div class="tile-caption"><strong>Кухня и столовая</strong><span>Функциональное пространство</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024766.jpg" alt="Гостиная с камином"><div class="tile-caption"><strong>Гостиная</strong><span>Свет · камин · большие окна</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024771.jpg" alt="Интерьер дома"><div class="tile-caption"><strong>Гостиная и кухня</strong><span>Единая стилистика</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024770.jpg" alt="Интерьер"><div class="tile-caption"><strong>Планировка</strong><span>Комфортная логика пространства</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024772.jpg" alt="Кухня"><div class="tile-caption"><strong>Кухня</strong><span>Отделка и инженерия</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024773.jpg" alt="Прихожая"><div class="tile-caption"><strong>Прихожая</strong><span>Хранение · свет · материалы</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024774.jpg" alt="Лестница и кладовая"><div class="tile-caption"><strong>Продуманные решения</strong><span>Лестница · хранение</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024775.jpg" alt="Инженерное помещение"><div class="tile-caption"><strong>Инженерия</strong><span>Техническое помещение</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024779.jpg" alt="Фасад дома"><div class="tile-caption"><strong>Фасад</strong><span>Материалы и архитектура</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024780.jpg" alt="Современный дом"><div class="tile-caption"><strong>Загородный дом</strong><span>Фасад и участок</span></div></figure>
-<figure class="tile"><img loading="lazy" src="1000024781.jpg" alt="Дом с кирпичной отделкой"><div class="tile-caption"><strong>Отделка</strong><span>Фасадные материалы</span></div></figure>
+<figure class="tile"><img alt="Спальня" loading="lazy" src="1000024765.jpg"/></figure>
+<figure class="tile"><img alt="Кухня и столовая" loading="lazy" src="1000024767.jpg"/></figure>
+<figure class="tile"><img alt="Гостиная с камином" loading="lazy" src="1000024766.jpg"/></figure>
+<figure class="tile"><img alt="Интерьер дома" loading="lazy" src="1000024771.jpg"/></figure>
+<figure class="tile"><img alt="Интерьер" loading="lazy" src="1000024770.jpg"/></figure>
+<figure class="tile"><img alt="Кухня" loading="lazy" src="1000024772.jpg"/></figure>
+<figure class="tile"><img alt="Прихожая" loading="lazy" src="1000024773.jpg"/></figure>
+<figure class="tile"><img alt="Лестница и кладовая" loading="lazy" src="1000024774.jpg"/></figure>
+<figure class="tile"><img alt="Инженерное помещение" loading="lazy" src="1000024775.jpg"/></figure>
+<figure class="tile"><img alt="Фасад дома" loading="lazy" src="1000024779.jpg"/></figure>
+<figure class="tile"><img alt="Современный дом" loading="lazy" src="1000024780.jpg"/></figure>
+<figure class="tile"><img alt="Дом с кирпичной отделкой" loading="lazy" src="1000024781.jpg"/></figure>
 </div></div></section>
-<section class="section process" id="process"><div class="container"><div class="section-head"><div><div class="kicker">06 / КАК МЫ СТРОИМ</div><h2>От идеи до ключей —<br><em>по понятному плану.</em></h2></div><p>Весь процесс собран в одной системе. Вы знаете, на каком этапе находится дом и что происходит дальше.</p></div><div class="steps"><article class="step"><b>01</b><h3>Консультация</h3><p>Участок, задачи, площадь и желаемый результат.</p></article><article class="step"><b>02</b><h3>Проектирование</h3><p>Подбираем или адаптируем архитектурное решение.</p></article><article class="step"><b>03</b><h3>Смета и договор</h3><p>Согласовываем объём, комплектацию и условия.</p></article><article class="step"><b>04</b><h3>Строительство</h3><p>Работы выполняются по утверждённому плану.</p></article><article class="step"><b>05</b><h3>Контроль</h3><p>Контролируем качество и последовательность работ.</p></article><article class="step"><b>06</b><h3>Ключи</h3><p>Передаём готовый дом и остаёмся на связи.</p></article></div></div></section>
-<section class="section video-section" id="construction"><div class="container"><div class="section-head"><div><div class="kicker">07 / В РЕАЛЬНОМ ПРОЦЕССЕ</div><h2>Не только готовый дом.<br><em>Показываем путь.</em></h2></div><p>Фотографии показывают результат. Видео помогает увидеть сам подход к строительству и понять, как выглядит процесс на практике.</p></div><div class="video-wrap"><video controls playsinline preload="metadata" poster="1000024720.jpg"><source src="real-project-video.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video><div class="video-overlay"></div><div class="video-copy"><div class="kicker">РЕАЛЬНЫЙ ПРОЕКТ</div><h2>Строительство<br><em>в движении.</em></h2><p>Посмотрите фрагменты строительного процесса и готовых решений.</p></div></div></div></section>
-<section class="lead-strip"><div class="container lead-strip-inner"><div><strong>Есть участок или только идея?</strong><br><span>Расскажите, что хотите построить — подскажем, с чего начать.</span></div><a class="btn btn-dark js-lead" href="#contact">Обсудить проект →</a></div></section>
+<section class="section process" id="process"><div class="container"><div class="section-head"><div><div class="kicker">06 / КАК МЫ СТРОИМ</div><h2>От идеи до ключей —<br/><em>по понятному плану.</em></h2></div><p>Весь процесс собран в одной системе. Вы знаете, на каком этапе находится дом и что происходит дальше.</p></div><div class="steps"><article class="step"><b>01</b><h3>Консультация</h3><p>Участок, задачи, площадь и желаемый результат.</p></article><article class="step"><b>02</b><h3>Проектирование</h3><p>Подбираем или адаптируем архитектурное решение.</p></article><article class="step"><b>03</b><h3>Смета и договор</h3><p>Согласовываем объём, комплектацию и условия.</p></article><article class="step"><b>04</b><h3>Строительство</h3><p>Работы выполняются по утверждённому плану.</p></article><article class="step"><b>05</b><h3>Контроль</h3><p>Контролируем качество и последовательность работ.</p></article><article class="step"><b>06</b><h3>Ключи</h3><p>Передаём готовый дом и остаёмся на связи.</p></article></div></div></section>
+<section class="section video-section" id="construction"><div class="container"><div class="section-head"><div><div class="kicker">07 / В РЕАЛЬНОМ ПРОЦЕССЕ</div><h2>Не только готовый дом.<br/><em>Показываем путь.</em></h2></div><p>Фотографии показывают результат. Видео помогает увидеть сам подход к строительству и понять, как выглядит процесс на практике.</p></div><div class="video-wrap"><video controls="" playsinline="" poster="1000024720.jpg" preload="metadata"><source src="real-project-video.mp4" type="video/mp4"/>Ваш браузер не поддерживает видео.</video><div class="video-overlay"></div><div class="video-copy"><div class="kicker">РЕАЛЬНЫЙ ПРОЕКТ</div><h2>Строительство<br/><em>в движении.</em></h2><p>Посмотрите фрагменты строительного процесса и готовых решений.</p></div></div></div></section>
+<section class="lead-strip"><div class="container lead-strip-inner"><div><strong>Есть участок или только идея?</strong><br/><span>Расскажите, что хотите построить — подскажем, с чего начать.</span></div><a class="btn btn-dark js-lead" href="#contact">Обсудить проект →</a></div></section>
 <section class="section finance" id="finance"><div class="container finance-grid"><div><div class="kicker">08 / ФИНАНСИРОВАНИЕ</div><h2>Подберём решение <em>под ваш проект.</em></h2></div><div><p class="finance-copy">Не привязываем всех клиентов к одной цифре. Стоимость строительства и финансовая нагрузка рассчитываются индивидуально — с учётом проекта, участка и выбранного способа финансирования.</p><div class="finance-list"><div class="finance-item"><b>01</b><div><strong>Индивидуальный расчёт</strong><span>Под площадь, проект, комплектацию и задачи.</span></div></div><div class="finance-item"><b>02</b><div><strong>Ипотека</strong><span>Помогаем разобраться с доступными вариантами финансирования.</span></div></div><div class="finance-item"><b>03</b><div><strong>Собственные средства</strong><span>Рассчитываем строительство под выбранный формат.</span></div></div></div></div></div></section>
-<section class="quote"><img loading="lazy" src="1000024768.jpg" alt="Гостиная готового дома"><div class="container quote-inner"><div class="kicker">ДОМ — ЭТО БОЛЬШЕ, ЧЕМ КВАДРАТНЫЕ МЕТРЫ</div><h2>Это пространство,<br><em>в котором живёт ваша история.</em></h2><p>Мы строим дома, которые должны быть удобными сегодня и оставаться частью жизни семьи на долгие годы.</p></div></section>
-<section class="section dark" id="faq"><div class="container faq-grid"><div><div class="kicker">09 / FAQ</div><h2>Вопросы, которые<br><em>важно задать заранее.</em></h2></div><div class="faq"><details open><summary>Можно ли построить дом по своему проекту <span>+</span></summary><p>Да. На консультации разбираем ваш проект, участок и требования и определяем оптимальный способ реализации.</p></details><details><summary>Работаете ли вы с участком клиента <span>+</span></summary><p>Да. Участок можно рассмотреть на этапе консультации и учесть его особенности при проектировании.</p></details><details><summary>Можно ли изменить планировку <span>+</span></summary><p>Параметры дома и планировка обсуждаются до согласования проекта и сметы.</p></details><details><summary>Как рассчитывается стоимость <span>+</span></summary><p>Индивидуально: учитываются площадь, проект, конструктив, комплектация, участок и выбранный объём работ.</p></details><details><summary>Можно ли начать с консультации, если проекта ещё нет <span>+</span></summary><p>Да. Можно начать с исходных данных: участок, желаемая площадь, количество комнат, стиль и ориентиры по бюджету. На их основе определим дальнейшие шаги.</p></details><details><summary>Можно ли заказать дом с отделкой <span>+</span></summary><p>Да, объём работ обсуждается заранее и фиксируется в согласованной комплектации и договоре.</p></details></div></div></section>
-<section class="contact" id="contact"><img loading="lazy" src="1000024779.jpg" alt="Готовый дом Домстрой"><div class="container contact-inner"><div class="kicker">10 / НАЧНЁМ</div><h2>Расскажите,<br>каким вы видите <em>свой дом.</em></h2><p>Оставьте заявку — обсудим участок, проект и ваши задачи. Подготовим индивидуальный расчёт.</p><div class="actions"><a class="btn btn-gold js-lead" href="#contact">Получить индивидуальный расчёт <b>→</b></a><a class="btn btn-outline" href="tel:+79173337928">Позвонить</a></div></div></section>
+<section class="quote"><img alt="Гостиная готового дома" loading="lazy" src="1000024768.jpg"/><div class="container quote-inner"><div class="kicker">ДОМ — ЭТО БОЛЬШЕ, ЧЕМ КВАДРАТНЫЕ МЕТРЫ</div><h2>Это пространство,<br/><em>в котором живёт ваша история.</em></h2><p>Мы строим дома, которые должны быть удобными сегодня и оставаться частью жизни семьи на долгие годы.</p></div></section>
+<section class="section dark" id="faq"><div class="container faq-grid"><div><div class="kicker">09 / FAQ</div><h2>Вопросы, которые<br/><em>важно задать заранее.</em></h2></div><div class="faq"><details open=""><summary>Можно ли построить дом по своему проекту <span>+</span></summary><p>Да. На консультации разбираем ваш проект, участок и требования и определяем оптимальный способ реализации.</p></details><details><summary>Работаете ли вы с участком клиента <span>+</span></summary><p>Да. Участок можно рассмотреть на этапе консультации и учесть его особенности при проектировании.</p></details><details><summary>Можно ли изменить планировку <span>+</span></summary><p>Параметры дома и планировка обсуждаются до согласования проекта и сметы.</p></details><details><summary>Как рассчитывается стоимость <span>+</span></summary><p>Индивидуально: учитываются площадь, проект, конструктив, комплектация, участок и выбранный объём работ.</p></details><details><summary>Можно ли начать с консультации, если проекта ещё нет <span>+</span></summary><p>Да. Можно начать с исходных данных: участок, желаемая площадь, количество комнат, стиль и ориентиры по бюджету. На их основе определим дальнейшие шаги.</p></details><details><summary>Можно ли заказать дом с отделкой <span>+</span></summary><p>Да, объём работ обсуждается заранее и фиксируется в согласованной комплектации и договоре.</p></details></div></div></section>
+<section class="contact" id="contact"><img alt="Готовый дом Домстрой" loading="lazy" src="1000024779.jpg"/><div class="container contact-inner"><div class="kicker">10 / НАЧНЁМ</div><h2>Расскажите,<br/>каким вы видите <em>свой дом.</em></h2><p>Оставьте заявку — обсудим участок, проект и ваши задачи. Подготовим индивидуальный расчёт.</p><div class="actions"><a class="btn btn-gold js-lead" href="#contact">Получить индивидуальный расчёт <b>→</b></a><a class="btn btn-outline" href="tel:+79173337928">Позвонить</a></div></div></section>
 </main>
 <div class="mobile-cta"><a class="call" href="tel:+79173337928">Позвонить</a><a class="tg" href="https://t.me/businessfinlib">Telegram</a></div>
-<div class="lead-modal" id="leadModal" aria-hidden="true"><div class="lead-card"><button class="lead-close" id="leadClose" aria-label="Закрыть">×</button><div class="kicker">ИНДИВИДУАЛЬНЫЙ РАСЧЁТ</div><h2>Расскажите<br>о вашем доме.</h2><p>Несколько ответов — и у вас будет понятный следующий шаг по проекту.</p><form id="leadForm"><input name="name" placeholder="Ваше имя" required><input name="phone" type="tel" placeholder="Телефон" required><input name="plot" placeholder="Участок: есть / в поиске / где находится" required><input name="area" placeholder="Желаемая площадь — от 70 м²"><textarea name="comment" placeholder="Что хотите построить? Можно в свободной форме"></textarea><label class="consent"><input type="checkbox" name="personal_consent" value="yes" required><span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a>.</span></label><button class="btn btn-gold" type="submit">Сформировать заявку →</button><small>Отправляя форму, вы подтверждаете согласие. Данные используются для обработки вашего обращения.</small></form></div></div><div class="toast" id="toast">Заявка подготовлена — открываем Telegram.</div><div class="container legal-note">
-  <strong>Важная информация</strong>
-  <span>Цены и сведения о стоимости, если они указаны на сайте, не являются публичной офертой. Итоговая стоимость определяется индивидуально после согласования проекта, комплектации и условий договора.</span>
-</div><footer class="footer"><div class="container footer-grid"><div><img class="footer-logo" src="logo-domstroy-light.png" alt="Домстрой"></div><div class="footer-col"><span>Москва и Московская область</span><a href="tel:+79173337928">+7 917 333-79-28</a></div><div class="footer-col"><a href="https://t.me/businessfinlib">Telegram</a><a href="#contact">Оставить заявку</a></div></div><div class="container footer-bottom"><span>© Домстрой</span><span>Цены и сведения о стоимости, если они указаны на сайте, носят информационный характер и не являются публичной офертой. Итоговая стоимость строительства определяется индивидуально и фиксируется в договоре.</span><a href="privacy.html">Политика конфиденциальности</a></div></footer>
-<div class="lightbox" id="lightbox"><button class="close" aria-label="Закрыть">×</button><div class="lightbox-controls"><button class="lb-arrow lb-prev" aria-label="Предыдущее фото">‹</button><button class="lb-arrow lb-next" aria-label="Следующее фото">›</button></div><img id="lightboxImg" alt=""></div>
+<div aria-hidden="true" class="lead-modal" id="leadModal"><div class="lead-card"><button aria-label="Закрыть" class="lead-close" id="leadClose">×</button><div class="kicker">ИНДИВИДУАЛЬНЫЙ РАСЧЁТ</div><h2>Расскажите<br/>о вашем доме.</h2><p>Несколько ответов — и у вас будет понятный следующий шаг по проекту.</p><form id="leadForm"><input name="name" placeholder="Ваше имя" required=""/><input name="phone" placeholder="Телефон" required="" type="tel"/><input name="plot" placeholder="Участок: есть / в поиске / где находится" required=""/><input name="area" placeholder="Желаемая площадь — от 70 м²"/><textarea name="comment" placeholder="Что хотите построить? Можно в свободной форме"></textarea><label class="consent"><input name="personal_consent" required="" type="checkbox" value="yes"/><span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="privacy.html" rel="noopener" target="_blank">Политикой конфиденциальности</a>.</span></label><button class="btn btn-gold" type="submit">Сформировать заявку →</button><small>Отправляя форму, вы подтверждаете согласие. Данные используются для обработки вашего обращения.</small></form></div></div><div class="toast" id="toast">Заявка подготовлена — открываем Telegram.</div><div class="container legal-note">
+<strong>Важная информация</strong>
+<span>Цены и сведения о стоимости, если они указаны на сайте, не являются публичной офертой. Итоговая стоимость определяется индивидуально после согласования проекта, комплектации и условий договора.</span>
+</div><footer class="footer"><div class="container footer-grid"><div><img alt="Домстрой" class="footer-logo" src="logo-domstroy-light.png"/></div><div class="footer-col"><span>Москва и Московская область</span><a href="tel:+79173337928">+7 917 333-79-28</a></div><div class="footer-col"><a href="https://t.me/businessfinlib">Telegram</a><a href="#contact">Оставить заявку</a></div></div><div class="container footer-bottom"><span>© Домстрой</span><span>Цены и сведения о стоимости, если они указаны на сайте, носят информационный характер и не являются публичной офертой. Итоговая стоимость строительства определяется индивидуально и фиксируется в договоре.</span><a href="privacy.html">Политика конфиденциальности</a></div></footer>
+<div class="lightbox" id="lightbox"><button aria-label="Закрыть" class="close">×</button><div class="lightbox-controls"><button aria-label="Предыдущее фото" class="lb-arrow lb-prev">‹</button><button aria-label="Следующее фото" class="lb-arrow lb-next">›</button></div><img alt="" id="lightboxImg"/></div>
 <script>
 const header=document.getElementById('header'),menu=document.getElementById('mobileMenu'),burger=document.querySelector('.burger');
 window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>30),{passive:true});
