@@ -279,45 +279,60 @@ body {
   }
 }
 
-/* Финальная адаптация мобильной версии */
-.tile:after{display:none}.tile-caption{position:static;padding:12px 4px 16px;background:var(--card)}.tile-caption strong{display:block;color:var(--text)}.tile-caption span{color:var(--muted)}
+/* Финальная мобильная адаптация */
+.hero-media picture,.hero-media picture img{display:block;width:100%;height:100%}
+.tile-caption{display:none!important}.tile:after{display:none!important}
 @media(max-width:900px){
-  body{padding-bottom:78px;overflow-x:hidden}
-  .container{width:calc(100% - 32px)}
-  .header{height:76px;padding:0 18px;background:rgba(10,10,9,.82);backdrop-filter:blur(12px)}
-  .logo{height:44px;max-width:190px}
-  .burger{display:block;margin-left:auto;font-size:0;width:42px;height:42px;position:relative}
-  .burger:before,.burger:after,.burger span{content:"";position:absolute;left:5px;right:5px;height:2px;background:#fff}
-  .burger:before{top:12px}.burger span{top:20px}.burger:after{top:28px}
-  .hero{height:auto;min-height:0;max-height:none;align-items:stretch}
-  .hero-media img{object-position:center 35%;height:100%;min-height:860px}
-  .hero-media:after{background:linear-gradient(180deg,rgba(0,0,0,.48) 0%,rgba(0,0,0,.20) 32%,rgba(0,0,0,.78) 100%)}
-  .hero-content{padding:112px 0 42px;width:100%;max-width:none}
-  .hero .eyebrow{font-size:10px;letter-spacing:.20em}
-  h1{font-size:clamp(48px,14vw,66px);line-height:.94;margin:18px 0 22px;max-width:100%;letter-spacing:-.025em}
-  .hero-copy{font-size:16px;line-height:1.5;max-width:100%;margin-bottom:24px}
-  .actions{display:flex;flex-direction:column;gap:10px;width:100%}
-  .actions .btn{width:100%;min-height:58px;font-size:15px;padding:15px 18px}
-  .hero-trust{display:grid;grid-template-columns:1fr 1fr;gap:20px 18px;margin-top:30px;padding-top:20px}
-  .hero-trust strong{font-size:18px}.hero-trust span{font-size:11px;line-height:1.35}
+  body{padding-bottom:76px}
+  .header{height:72px;padding:0 18px;background:rgba(10,10,9,.92);backdrop-filter:blur(12px)}
+  .header .logo{height:44px;max-width:200px}
+  .burger{font-size:0;width:46px;height:46px;position:relative}
+  .burger:before,.burger:after{content:"";position:absolute;left:7px;right:0;height:2px;background:#fff}
+  .burger:before{top:15px;box-shadow:0 9px 0 #fff}
+  .hero{min-height:0;height:auto;max-height:none;display:block;padding-top:72px;background:#0b0b0a}
+  .hero-media{position:absolute;top:72px;left:0;right:0;height:calc(100svh - 72px);min-height:640px}
+  .hero-media:after{background:linear-gradient(180deg,rgba(0,0,0,.12) 0%,rgba(0,0,0,.18) 28%,rgba(0,0,0,.68) 70%,rgba(0,0,0,.92) 100%)}
+  .hero-content{width:calc(100% - 32px);margin:0 16px;padding:54px 0 54px;min-height:calc(100svh - 72px);display:flex;flex-direction:column;justify-content:flex-end}
+  .eyebrow{font-size:9px;letter-spacing:.18em;margin-bottom:8px}
+  .hero h1{font-size:clamp(43px,11vw,52px);line-height:1.02;letter-spacing:-.02em;margin:8px 0 18px;max-width:100%}
+  .hero-copy{font-size:15px;line-height:1.5;max-width:100%;margin-bottom:22px;color:#eeeae2}
+  .actions{display:grid;grid-template-columns:1fr;gap:10px;width:100%}
+  .actions .btn{width:100%;min-height:56px;padding:14px 16px;font-size:16px}
+  .hero-trust{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin-top:26px;padding-top:18px}
+  .hero-trust strong{font-size:17px}.hero-trust span{font-size:10px;line-height:1.35}
   .hero-scroll{display:none}
-  .gallery-grid{display:block}.tile{margin-bottom:18px;min-height:0!important}.tile img{height:auto!important;aspect-ratio:16/10;object-fit:cover}.tile-caption{padding:10px 0 2px;background:transparent}.tile-caption strong{font-size:15px}.tile-caption span{font-size:11px}
-  .split{display:flex;flex-direction:column;min-height:0}.split-image img{height:auto;aspect-ratio:4/3;object-fit:cover}.split-copy{padding:46px 0}
-  .steps{grid-template-columns:1fr 1fr;gap:0;margin-top:35px}.step{padding:20px 12px 18px 0!important;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.step:nth-child(even){padding-left:14px!important;border-right:0}.step h3{font-size:15px;margin:12px 0 6px}.step p{font-size:11px}
-  .finance-grid{grid-template-columns:1fr;gap:28px}.finance h2{font-size:46px}.finance-copy{font-size:14px}.finance-item{grid-template-columns:34px 1fr}
-  .quote{min-height:500px}.quote img,.contact img{object-position:center;height:100%;object-fit:cover}.quote h2{font-size:48px}.contact{min-height:560px}
-  .section{padding:72px 0}.section-head{display:block;margin-bottom:30px}.section-head h2{font-size:46px}.section-head>p{margin-top:18px}
-  .video-wrap,.video-wrap video{height:380px;min-height:380px}.video-copy{display:none}
-  .mobile-cta{padding:10px 12px calc(10px + env(safe-area-inset-bottom));}.mobile-cta a{min-height:58px;display:flex;align-items:center;justify-content:center;font-size:15px}
+  .section{padding:64px 0}
+  .intro-grid{gap:24px}.intro h2,.section-head h2,.finance h2,.quote h2,.contact h2{font-size:clamp(40px,10.5vw,52px);line-height:1.04;overflow-wrap:break-word;word-break:normal}
+  .intro p,.section-head>p,.finance-copy{font-size:15px;line-height:1.6}
+  .section-head{display:block;margin-bottom:30px}.section-head>p{margin-top:18px;max-width:100%}
+  .benefits-grid{grid-template-columns:1fr;margin-top:30px;gap:1px}
+  .benefit{min-height:0;padding:24px 20px}.benefit h3{margin:12px 0 8px}
+  .gallery-grid{display:block}.tile,.tile:nth-child(n),.tile:nth-child(1){display:block;min-height:0!important;height:auto!important;margin:0 0 12px}
+  .tile img{width:100%;height:auto!important;object-fit:contain;transition:none}
+  .split{display:block;min-height:0}.split-image img{height:auto}.split-copy{padding:48px 20px}
+  .steps{display:block;margin-top:36px}.step,.step:not(:first-child){display:grid;grid-template-columns:38px 1fr;column-gap:12px;border-right:0;border-bottom:1px solid var(--line);padding:20px 0!important}.step b{grid-row:1 / span 2}.step h3{margin:0 0 6px;font-size:17px}.step p{grid-column:2;margin:0}
+  .video-wrap{min-height:0;height:auto}.video-wrap video{height:auto;min-height:0;aspect-ratio:16/10;object-fit:cover}.video-overlay,.video-copy{display:none}
+  .finance-grid{display:block}.finance-list{margin-top:22px}.finance-item{grid-template-columns:34px minmax(0,1fr);padding:18px 0}.finance-item strong,.finance-item span{overflow-wrap:normal;word-break:normal}
+  .faq-grid{display:block}.faq{margin-top:28px}.faq summary{font-size:15px;line-height:1.4}
+  .contact{min-height:620px}.contact-inner{padding:56px 0 100px}.contact h2{font-size:48px}
+  .mobile-cta{height:76px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}.mobile-cta a{font-size:16px;min-height:56px;display:flex;align-items:center;justify-content:center;border-radius:3px}
+  .legal-note{padding:18px 0 22px}.footer-bottom span:nth-child(2){font-size:10px}
 }
 @media(max-width:520px){
-  .hero-media img{min-height:820px;object-position:58% 34%}
-  .hero-content{padding-top:108px;padding-bottom:34px}
-  h1{font-size:clamp(45px,13.5vw,58px);line-height:.95}
-  .hero-copy{font-size:15px}
-  .hero-trust{gap:18px 14px}.hero-trust strong{font-size:17px}
-  .benefits-grid{grid-template-columns:1fr 1fr}.benefit{padding:22px 16px;min-height:150px}.benefit h3{font-size:15px;margin:12px 0 6px}.benefit p{font-size:11px}
+  .container{width:calc(100% - 32px)}
+  .hero-media picture img{object-fit:cover;object-position:center center}
+  .hero-content{padding-top:38px;padding-bottom:40px}
+  .hero h1{font-size:clamp(42px,10.8vw,50px);max-width:100%}
+  .hero-copy{font-size:14px;line-height:1.48}
+  .hero-trust{grid-template-columns:1fr 1fr}
+  .intro-grid{display:block}.intro-grid>.kicker{margin-bottom:22px}
+  .intro h2,.section-head h2,.finance h2{font-size:42px}
+  .benefit p{font-size:13px}
+  .gallery-grid .tile img{border-radius:2px}
+  .lead-strip-inner{gap:18px}.lead-strip strong{font-size:30px;line-height:1.05}.lead-strip span{font-size:13px}
+  .lead-card{max-height:calc(100svh - 20px);padding:28px 18px}.lead-card h2{font-size:34px}
 }
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Домстрой","url":"https://домстроймск.рф/","telephone":"+7 917 333-79-28","areaServed":["Москва","Московская область"],"description":"Проектирование и строительство частных домов под ключ в Москве и Московской области."}</script></head>
 <body>
@@ -331,13 +346,13 @@ body {
 </div>
 <main id="top">
 <section class="hero">
-  <div class="hero-media"><img src="project-frame-panoramic.jpg" alt="Современный загородный дом Домстрой" fetchpriority="high"></div>
+  <div class="hero-media"><picture><source media="(max-width: 520px)" srcset="project-frame-black-scandi.jpg"><img src="project-frame-panoramic.jpg" alt="Современный загородный дом Домстрой" fetchpriority="high"></picture></div>
   <div class="container hero-content">
     <div class="eyebrow">СОВРЕМЕННЫЕ ДОМА · МОСКВА И МО</div>
     <h1>Дома,<br><span>в которых хочется жить.</span></h1>
     <p class="hero-copy">Проектируем и строим загородные дома под ключ. От идеи и проекта до отделки и передачи ключей — с понятным процессом и контролем качества.</p>
     <div class="actions"><a class="btn btn-gold js-lead" href="#contact">Рассчитать строительство <b>→</b></a><a class="btn btn-outline" href="#projects">Посмотреть дома</a></div>
-    <div class="hero-trust"><div><strong>Система</strong><span>стройка под контролем</span></div><div><strong>Под ключ</strong><span>один ответственный контур</span></div></div>
+    <div class="hero-trust"><div><strong>Система</strong><span>стройка под контролем</span></div><div><strong>Под ключ</strong><span>один ответственный контур</span></div><div><strong>Ипотека</strong><span>поможем разобраться с условиями</span></div></div>
   </div><div class="hero-scroll">SCROLL ↓</div>
 </section>
 <section class="intro section"><div class="container intro-grid"><div class="kicker">01 / ФИЛОСОФИЯ</div><div><h2>Строительство должно приносить <em>уверенность,</em> а не стресс.</h2><p>Мы выстраиваем строительство как систему: проект, смета, договор, стройка, контроль и передача ключей. Вы понимаете, что происходит на каждом этапе.</p><a class="text-link" href="#process">Посмотреть процесс строительства →</a></div></div></section>
@@ -372,16 +387,16 @@ body {
 <section class="section process" id="process"><div class="container"><div class="section-head"><div><div class="kicker">06 / КАК МЫ СТРОИМ</div><h2>От идеи до ключей —<br><em>по понятному плану.</em></h2></div><p>Весь процесс собран в одной системе. Вы знаете, на каком этапе находится дом и что происходит дальше.</p></div><div class="steps"><article class="step"><b>01</b><h3>Консультация</h3><p>Участок, задачи, площадь и желаемый результат.</p></article><article class="step"><b>02</b><h3>Проектирование</h3><p>Подбираем или адаптируем архитектурное решение.</p></article><article class="step"><b>03</b><h3>Смета и договор</h3><p>Согласовываем объём, комплектацию и условия.</p></article><article class="step"><b>04</b><h3>Строительство</h3><p>Работы выполняются по утверждённому плану.</p></article><article class="step"><b>05</b><h3>Контроль</h3><p>Контролируем качество и последовательность работ.</p></article><article class="step"><b>06</b><h3>Ключи</h3><p>Передаём готовый дом и остаёмся на связи.</p></article></div></div></section>
 <section class="section video-section" id="construction"><div class="container"><div class="section-head"><div><div class="kicker">07 / В РЕАЛЬНОМ ПРОЦЕССЕ</div><h2>Не только готовый дом.<br><em>Показываем путь.</em></h2></div><p>Фотографии показывают результат. Видео помогает увидеть сам подход к строительству и понять, как выглядит процесс на практике.</p></div><div class="video-wrap"><video controls playsinline preload="metadata" poster="1000024720.jpg"><source src="real-project-video.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video><div class="video-overlay"></div><div class="video-copy"><div class="kicker">РЕАЛЬНЫЙ ПРОЕКТ</div><h2>Строительство<br><em>в движении.</em></h2><p>Посмотрите фрагменты строительного процесса и готовых решений.</p></div></div></div></section>
 <section class="lead-strip"><div class="container lead-strip-inner"><div><strong>Есть участок или только идея?</strong><br><span>Расскажите, что хотите построить — подскажем, с чего начать.</span></div><a class="btn btn-dark js-lead" href="#contact">Обсудить проект →</a></div></section>
-<section class="section finance" id="finance"><div class="container finance-grid"><div><div class="kicker">08 / ФИНАНСИРОВАНИЕ</div><h2>Подберём решение <em>под ваш проект.</em></h2></div><div><p class="finance-copy">Стоимость строительства рассчитываем индивидуально — с учётом проекта, участка и выбранной комплектации. Если планируете строительство в ипотеку, поможем разобраться с вариантом финансирования и подготовить данные по проекту.</p><div class="finance-list"><div class="finance-item"><b>01</b><div><strong>Индивидуальный расчёт</strong><span>Под площадь, проект, комплектацию и задачи.</span></div></div><div class="finance-item"><b>02</b><div><strong>Ипотека</strong><span>Поможем разобраться с ипотечным финансированием и подготовить проект к расчёту.</span></div></div><div class="finance-item"><b>03</b><div><strong>Собственные средства</strong><span>Рассчитываем строительство под выбранный формат.</span></div></div></div></div></div></section>
+<section class="section finance" id="finance"><div class="container finance-grid"><div><div class="kicker">08 / ФИНАНСИРОВАНИЕ</div><h2>Подберём решение <em>под ваш проект.</em></h2></div><div><p class="finance-copy">Рассматриваем ипотечное и собственное финансирование. Условия и итоговая сумма рассчитываются индивидуально — с учётом проекта, участка, комплектации и выбранной программы.</p><div class="finance-list"><div class="finance-item"><b>01</b><div><strong>Индивидуальный расчёт</strong><span>Под площадь, проект, комплектацию и задачи.</span></div></div><div class="finance-item"><b>02</b><div><strong>Ипотека</strong><span>Помогаем разобраться с доступными вариантами финансирования.</span></div></div><div class="finance-item"><b>03</b><div><strong>Собственные средства</strong><span>Рассчитываем строительство под выбранный формат.</span></div></div></div></div></div></section>
 <section class="quote"><img loading="lazy" src="1000024768.jpg" alt="Гостиная готового дома"><div class="container quote-inner"><div class="kicker">ДОМ — ЭТО БОЛЬШЕ, ЧЕМ КВАДРАТНЫЕ МЕТРЫ</div><h2>Это пространство,<br><em>в котором живёт ваша история.</em></h2><p>Мы строим дома, которые должны быть удобными сегодня и оставаться частью жизни семьи на долгие годы.</p></div></section>
 <section class="section dark" id="faq"><div class="container faq-grid"><div><div class="kicker">09 / FAQ</div><h2>Вопросы, которые<br><em>важно задать заранее.</em></h2></div><div class="faq"><details open><summary>Можно ли построить дом по своему проекту <span>+</span></summary><p>Да. На консультации разбираем ваш проект, участок и требования и определяем оптимальный способ реализации.</p></details><details><summary>Работаете ли вы с участком клиента <span>+</span></summary><p>Да. Участок можно рассмотреть на этапе консультации и учесть его особенности при проектировании.</p></details><details><summary>Можно ли изменить планировку <span>+</span></summary><p>Параметры дома и планировка обсуждаются до согласования проекта и сметы.</p></details><details><summary>Как рассчитывается стоимость <span>+</span></summary><p>Индивидуально: учитываются площадь, проект, конструктив, комплектация, участок и выбранный объём работ.</p></details><details><summary>Можно ли начать с консультации, если проекта ещё нет <span>+</span></summary><p>Да. Можно начать с исходных данных: участок, желаемая площадь, количество комнат, стиль и ориентиры по бюджету. На их основе определим дальнейшие шаги.</p></details><details><summary>Можно ли заказать дом с отделкой <span>+</span></summary><p>Да, объём работ обсуждается заранее и фиксируется в согласованной комплектации и договоре.</p></details></div></div></section>
 <section class="contact" id="contact"><img loading="lazy" src="1000024779.jpg" alt="Готовый дом Домстрой"><div class="container contact-inner"><div class="kicker">10 / НАЧНЁМ</div><h2>Расскажите,<br>каким вы видите <em>свой дом.</em></h2><p>Оставьте заявку — обсудим участок, проект и ваши задачи. Подготовим индивидуальный расчёт.</p><div class="actions"><a class="btn btn-gold js-lead" href="#contact">Получить индивидуальный расчёт <b>→</b></a><a class="btn btn-outline" href="tel:+79173337928">Позвонить</a></div></div></section>
 </main>
-<div class="mobile-cta"><a class="call" href="tel:+79173337928">Позвонить</a><a class="tg" href="https://t.me/businessfinlib">Написать</a></div>
-<div class="lead-modal" id="leadModal" aria-hidden="true"><div class="lead-card"><button class="lead-close" id="leadClose" aria-label="Закрыть">×</button><div class="kicker">ИНДИВИДУАЛЬНЫЙ РАСЧЁТ</div><h2>Расскажите<br>о вашем доме.</h2><p>Несколько ответов — и у вас будет понятный следующий шаг по проекту.</p><form id="leadForm"><input name="name" placeholder="Ваше имя" required><input name="phone" type="tel" placeholder="Телефон" required><input name="plot" placeholder="Участок: есть / в поиске / где находится" required><input name="area" placeholder="Желаемая площадь"><textarea name="comment" placeholder="Что хотите построить? Можно в свободной форме"></textarea><label class="consent"><input type="checkbox" name="personal_consent" value="yes" required><span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a>.</span></label><button class="btn btn-gold" type="submit">Сформировать заявку →</button><small>Отправляя форму, вы подтверждаете согласие. Данные используются для обработки вашего обращения.</small></form></div></div><div class="toast" id="toast">Заявка подготовлена — открываем чат.</div><div class="container legal-note">
+<div class="mobile-cta"><a class="call" href="tel:+79173337928">Позвонить</a><a class="tg js-lead" href="#contact">Написать</a></div>
+<div class="lead-modal" id="leadModal" aria-hidden="true"><div class="lead-card"><button class="lead-close" id="leadClose" aria-label="Закрыть">×</button><div class="kicker">ИНДИВИДУАЛЬНЫЙ РАСЧЁТ</div><h2>Расскажите<br>о вашем доме.</h2><p>Несколько ответов — и у вас будет понятный следующий шаг по проекту.</p><form id="leadForm"><input name="name" placeholder="Ваше имя" required><input name="phone" type="tel" placeholder="Телефон" required><input name="plot" placeholder="Участок: есть / в поиске / где находится" required><input name="area" placeholder="Желаемая площадь"><textarea name="comment" placeholder="Что хотите построить? Можно в свободной форме"></textarea><label class="consent"><input type="checkbox" name="personal_consent" value="yes" required><span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a>.</span></label><button class="btn btn-gold" type="submit">Сформировать заявку →</button><small>Отправляя форму, вы подтверждаете согласие. Данные используются для обработки вашего обращения.</small></form></div></div><div class="toast" id="toast">Заявка подготовлена — открываем переписку.</div><div class="container legal-note">
   <strong>Важная информация</strong>
   <span>Цены и сведения о стоимости, если они указаны на сайте, не являются публичной офертой. Итоговая стоимость определяется индивидуально после согласования проекта, комплектации и условий договора.</span>
-</div><footer class="footer"><div class="container footer-grid"><div><img class="footer-logo" src="logo-domstroy-light.png" alt="Домстрой"></div><div class="footer-col"><span>Москва и Московская область</span><a href="tel:+79173337928">+7 917 333-79-28</a></div><div class="footer-col"><a href="https://t.me/businessfinlib">Написать</a><a href="#contact">Оставить заявку</a></div></div><div class="container footer-bottom"><span>© Домстрой</span><span>Цены и сведения о стоимости, если они указаны на сайте, носят информационный характер и не являются публичной офертой. Итоговая стоимость строительства определяется индивидуально и фиксируется в договоре.</span><a href="privacy.html">Политика конфиденциальности</a></div></footer>
+</div><footer class="footer"><div class="container footer-grid"><div><img class="footer-logo" src="logo-domstroy-light.png" alt="Домстрой"></div><div class="footer-col"><span>Москва и Московская область</span><a href="tel:+79173337928">+7 917 333-79-28</a></div><div class="footer-col"><a class="js-lead" href="#contact">Написать</a><a href="#contact">Оставить заявку</a></div></div><div class="container footer-bottom"><span>© Домстрой</span><span>Цены и сведения о стоимости, если они указаны на сайте, носят информационный характер и не являются публичной офертой. Итоговая стоимость строительства определяется индивидуально и фиксируется в договоре.</span><a href="privacy.html">Политика конфиденциальности</a></div></footer>
 <div class="lightbox" id="lightbox"><button class="close" aria-label="Закрыть">×</button><div class="lightbox-controls"><button class="lb-arrow lb-prev" aria-label="Предыдущее фото">‹</button><button class="lb-arrow lb-next" aria-label="Следующее фото">›</button></div><img id="lightboxImg" alt=""></div>
 <script>
 const header=document.getElementById('header'),menu=document.getElementById('mobileMenu'),burger=document.querySelector('.burger');
