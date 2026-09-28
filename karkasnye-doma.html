@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Каркасные дома — Домстрой</title>
-<!-- Version v10 -->
+<!-- Version v15 -->
 <meta name="description" content="Современные каркасные дома Домстрой: архитектура, террасы, панорамное остекление и индивидуальные решения под участок и задачи семьи.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,6 +64,18 @@
   .finish-gallery img,
   .finish-gallery img:first-child { height: 260px; }
 }
+
+/* V15 — фотографии без обрезания и только релевантные изображения */
+.gallery figure,.curated-frame-gallery figure{min-height:0;aspect-ratio:auto;background:#111;}
+.gallery img,.curated-frame-gallery img{width:100%;height:auto;object-fit:contain;object-position:center;background:#111;}
+.curated-frame-gallery figure:nth-child(1),.curated-frame-gallery figure:nth-child(2),.curated-frame-gallery figure:nth-child(3),.curated-frame-gallery figure:nth-child(4){grid-column:span 6;}
+.finish-gallery{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;}
+.finish-gallery img,.finish-gallery img:first-child{width:100%;height:auto;grid-column:auto;object-fit:contain;background:#fff;}
+@media(max-width:900px){.curated-frame-gallery figure:nth-child(n){grid-column:auto}.finish-gallery{grid-template-columns:1fr 1fr}.finish-gallery img,.finish-gallery img:first-child{height:auto;}}
+@media(max-width:520px){.curated-frame-gallery figure:nth-child(n){grid-column:auto}.finish-gallery{grid-template-columns:1fr}.finish-gallery img,.finish-gallery img:first-child{height:auto;}}
+
+/* V17 — реальная чистовая отделка каркасного дома одним цельным коллажем */
+.finish-single{max-width:1200px;margin:0 auto}.finish-single-head{margin-bottom:28px}.finish-single-head h2{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(40px,4.5vw,64px);line-height:1.03;margin:14px 0 0}.finish-single-image{width:100%;background:#111;overflow:hidden}.finish-single-image img{display:block;width:100%;height:auto;object-fit:contain}
 </style>
 </head>
 <body>
@@ -72,21 +84,17 @@
 <section class="hero"><div class="container hero-inner"><div class="kicker">ДОМСТРОЙ / КАРКАСНАЯ ТЕХНОЛОГИЯ</div><h1>Современный дом,<br><em>который хочется увидеть вживую.</em></h1><p>Каркасный дом — современное решение для круглогодичной жизни. Подберём проект, поможем с участком и ипотекой, адаптируем планировку и построим дом по согласованной комплектации.</p><div class="actions"><a class="btn btn-gold" href="#showcase">Посмотреть проект →</a><a class="btn btn-outline" href="tel:+79173337928">Позвонить</a></div></div></section>
 <section class="section showcase" id="showcase"><div class="container showcase-grid"><div class="stage"><div class="stage-glow"></div><div class="turntable"></div><div class="house-card"><img src="project-frame-panoramic.jpg" alt="Современный каркасный дом на подсвеченном подиуме"></div><div class="stage-light"></div></div><div class="showcase-copy"><div class="kicker">01 / ГЛАВНЫЙ ОБЪЕКТ</div><h2>Каркасный дом<br><em>в современной подаче.</em></h2><ul class="features"><li>Современная архитектура и панорамное остекление</li><li>Комфорт для круглогодичного проживания</li><li>Планировка под участок и состав семьи</li><li>Терраса и большие окна для естественного света</li><li>Выбор фасада, материалов и отделки</li></ul></div></div></section>
 <section class="section"><div class="container sales-grid"><div class="sales-copy"><div class="kicker">02 / ПОЧЕМУ КАРКАСНЫЙ ДОМ</div><h2>Дом, который создаётся <em style="color:var(--gold2);font-style:normal">под вашу жизнь.</em></h2><p>Мы не предлагаем просто «коробку». Важны готовая логика пространства, тепло, свет, удобная кухня-гостиная, приватные спальни и место для отдыха на участке.</p><div class="benefit-cards"><div class="benefit-card"><strong>Тёплый дом</strong><span>Продуманная конструкция и утепление для комфортного проживания круглый год.</span></div><div class="benefit-card"><strong>Современная планировка</strong><span>Пространство без лишних проходов — больше полезной площади для семьи.</span></div><div class="benefit-card"><strong>Архитектура на выбор</strong><span>Фасады, кровля, окна и отделочные решения можно подобрать под ваш вкус.</span></div><div class="benefit-card"><strong>Под ваш участок</strong><span>Адаптируем проект с учётом размеров участка, въезда, сторон света и ваших задач.</span></div></div><div class="trust-strip"><span>Круглогодичное проживание</span><span>Чистовая отделка</span><span>Индивидуальная адаптация</span></div></div><div class="gallery curated-frame-gallery">
-<figure><img src="real-frame-house-evening.jpg" alt="Каркасный дом вечером"></figure>
-<figure><img src="real-frame-snow-wide.jpg" alt="Каркасный дом зимой"></figure>
+<figure><img src="project-frame-modern-dark.jpg" alt="Современный каркасный дом в лесу"></figure>
 <figure><img src="project-modern-3.jpg" alt="Современный каркасный дом"></figure>
 <figure><img src="project-modern-5.jpg" alt="Современный каркасный дом с террасой"></figure>
-<figure><img src="project-frame-dark-blue.jpg" alt="Современный каркасный дом в зимнем лесу"></figure>
+<figure><img src="project-frame-dark-blue.jpg" alt="Современный каркасный дом зимой"></figure>
 </div></div></section>
 
 <section class="section plan-section"><div class="container plan-wrap"><div class="plan-image"><img src="project-plan72-layout.jpg" alt="Планировка каркасного дома с двумя спальнями и кухней-гостиной" /></div><div class="plan-copy"><div class="kicker">03 / ПЛАНИРОВКА</div><h2>Продуманное пространство для семьи.</h2><p>Показываем конкретный вариант планировки: просторная кухня-гостиная, две отдельные спальни, санузел, техническое помещение, холл и тамбур. Планировку можно адаптировать под участок и ваши задачи.</p><ul class="plan-points"><li>Большая кухня-гостиная — 26,7 м²</li><li>Две отдельные спальни</li><li>Санузел и техническая зона</li><li>Холл и отдельный тамбур</li><li>Крыльцо для комфортного входа в дом</li></ul><div class="actions"><a class="btn btn-gold" href="https://wa.me/79173337928" target="_blank" rel="noopener">Обсудить планировку →</a></div></div></div></section>
 
-<section class="section finish-section"><div class="container finish-grid"><div class="finish-copy"><div class="kicker">04 / ЧИСТОВАЯ ОТДЕЛКА</div><h2>Чистовая отделка без лишних компромиссов.</h2><p>Показываем реальный результат внутри дома: светлая отделка, напольное покрытие, готовый санузел и аккуратно выполненные жилые помещения. Мебель и декор вы выбираете под себя.</p><ul class="finish-list"><li>Светлые стены и аккуратная внутренняя отделка</li><li>Готовые жилые помещения и коридор</li><li>Чистовая отделка жилых помещений</li><li>Санузел с полноценной чистовой отделкой</li></ul></div><div class="finish-gallery">
-<img src="real-interior-hallway-white.jpg" alt="Чистовая отделка каркасного дома — коридор"/>
-<img src="real-interior-bathroom-dark.jpg" alt="Чистовая отделка каркасного дома — санузел"/>
-</div></div></section>
+<section class="section finish-section"><div class="container finish-single"><div class="finish-single-head"><div class="kicker">04 / ЧИСТОВАЯ ОТДЕЛКА</div><h2>Чистовая отделка каркасного дома.</h2></div><div class="finish-single-image"><img src="real-frame-finish-collage.jpg" alt="Чистовая отделка каркасного дома" /></div></div></section>
 
-<section class="section"><div class="container"><div class="section-head"><div><div class="kicker">05 / КАК НАЧАТЬ</div><h2>Понятный путь<br>к вашему дому.</h2></div><p>Не нужно заранее разбираться во всех технических деталях. Мы поможем пройти путь от выбора решения до строительства дома.</p></div><div class="steps">
+<section class="section"><div class="container"><div class="section-head"><div><div class="kicker">05 / КАК НАЧАТЬ</div><h2>Понятный путь<br>к вашему дому.</h2></div><p>Не нужно заранее разбираться во всех технических деталях. Поможем выбрать решение, проверить участок, разобраться с ипотекой и построим дом по согласованной комплектации.</p></div><div class="steps">
 <div class="step"><div class="step-num">01</div><strong>Подбираем проект</strong><span>Определяем площадь, планировку и архитектуру под ваши задачи.</span></div>
 <div class="step"><div class="step-num">02</div><strong>Помогаем с участком</strong><span>Если участка нет — поможем подобрать вариант и проверить его перед покупкой.</span></div>
 <div class="step"><div class="step-num">03</div><strong>Согласовываем расчёт</strong><span>Фиксируем проект, комплектацию и состав работ до начала строительства.</span></div>
@@ -95,12 +103,11 @@
 <div class="step"><div class="step-num">06</div><strong>Передаём результат</strong><span>Завершаем согласованный объём работ и передаём дом заказчику.</span></div>
 </div></div></section>
 
-<section class="section light"><div class="container"><div class="section-head"><div><div class="kicker">06 / ПРИМЕРЫ ДОМОВ</div><h2>Разные дома.<br>Одна технология.</h2></div><p>Выбираем архитектуру под участок и задачи. Можно менять планировку, площадь, фасад, материалы и комплектацию.</p></div><div class="gallery">
-<figure><img src="real-frame-house-evening.jpg" alt="Каркасный дом вечером" /></figure>
-<figure><img src="real-frame-snow-wide.jpg" alt="Каркасный дом зимой" /></figure>
+<section class="section light"><div class="container"><div class="section-head"><div><div class="kicker">06 / ПРИМЕРЫ ДОМОВ</div><h2>Современные решения<br>для каркасного дома.</h2></div><p>Показываем только подходящие проекты без случайных и неподходящих фотографий. Архитектуру, планировку и отделку можно адаптировать под участок.</p></div><div class="gallery curated-frame-gallery">
+<figure><img src="project-frame-modern-dark.jpg" alt="Современный каркасный дом в лесу" /></figure>
 <figure><img src="project-modern-3.jpg" alt="Современный каркасный дом" /></figure>
 <figure><img src="project-modern-5.jpg" alt="Современный каркасный дом с террасой" /></figure>
-<figure><img src="project-frame-dark-blue.jpg" alt="Современный каркасный дом в зимнем лесу" /></figure>
+<figure><img src="project-frame-dark-blue.jpg" alt="Современный каркасный дом зимой" /></figure>
 </div></div></section>
 
 <section class="cta"><div class="container cta-inner"><strong>Есть участок или только идея?</strong><a class="btn btn-dark" href="https://wa.me/79173337928" target="_blank" rel="noopener">Обсудить каркасный дом →</a></div></section>
