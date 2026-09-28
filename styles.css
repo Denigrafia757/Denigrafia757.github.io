@@ -1724,3 +1724,88 @@ p {
 .finish-caption{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:12px;line-height:1.6;color:#8f8a80;max-width:390px}
 @media(max-width:900px){.finish-wrap{grid-template-columns:1fr;gap:35px}.finish-single-image{max-width:560px;max-height:500px}.finish-single-image img{max-height:500px}.finish-side{max-width:560px}.finish-side h2{font-size:clamp(36px,7vw,52px)}}
 @media(max-width:520px){.finish-section{padding-top:65px;padding-bottom:65px}.finish-single-image{max-height:420px}.finish-single-image img{max-height:420px}.finish-side h2{font-size:38px}}
+
+/* V20 — stone-house hero: show the actual house photo as the hero, with compact readable copy */
+.hero{
+  min-height:calc(100vh - 0px)!important;
+  height:min(900px,100vh)!important;
+  max-height:none!important;
+  position:relative!important;
+  overflow:hidden!important;
+  padding:0!important;
+  display:block!important;
+  background:#0a0a09!important;
+}
+.hero-media{
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+  width:100%!important;
+  height:100%!important;
+  overflow:hidden!important;
+}
+.hero-media img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+}
+.hero-overlay{
+  position:absolute!important;
+  inset:0!important;
+  z-index:1!important;
+  display:block!important;
+  background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.48) 30%,rgba(0,0,0,.12) 62%,rgba(0,0,0,.04) 100%)!important;
+}
+.hero-content{
+  position:relative!important;
+  z-index:2!important;
+  width:min(calc(100% - 72px),var(--max))!important;
+  height:100%!important;
+  margin:0 auto!important;
+  display:flex!important;
+  align-items:center!important;
+  padding:105px 0 60px!important;
+}
+.hero-copy-box{
+  display:block!important;
+  max-width:620px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
+.hero h1{
+  font-size:clamp(42px,4.2vw,64px)!important;
+  line-height:1.02!important;
+  margin:18px 0 22px!important;
+  max-width:620px!important;
+}
+.hero-copy{
+  font-size:16px!important;
+  line-height:1.55!important;
+  max-width:560px!important;
+  color:#f0ece4!important;
+  margin:0 0 28px!important;
+}
+.hero-trust{display:none!important;}
+.hero-scroll{z-index:3!important;}
+@media(max-width:900px){
+  .hero{min-height:760px!important;height:88vh!important;}
+  .hero-content{width:min(calc(100% - 36px),var(--max))!important;padding:88px 0 42px!important;align-items:flex-end!important;}
+  .hero-overlay{background:linear-gradient(180deg,rgba(0,0,0,.18) 0%,rgba(0,0,0,.18) 30%,rgba(0,0,0,.72) 100%)!important;}
+  .hero-copy-box{max-width:100%!important;}
+  .hero h1{font-size:clamp(42px,9vw,62px)!important;max-width:650px!important;}
+  .hero-copy{font-size:15px!important;max-width:620px!important;}
+}
+@media(max-width:520px){
+  .hero{min-height:700px!important;height:88vh!important;}
+  .hero-content{width:calc(100% - 24px)!important;padding:78px 0 24px!important;}
+  .hero h1{font-size:42px!important;margin:14px 0 18px!important;}
+  .hero-copy{font-size:14px!important;margin-bottom:22px!important;}
+  .actions{gap:8px!important;}
+  .btn{padding:14px 16px!important;font-size:12px!important;}
+}
