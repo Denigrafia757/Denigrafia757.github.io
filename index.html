@@ -1088,7 +1088,71 @@ html,body{overflow-x:hidden}
 /* No cropping for curated photo galleries */
 .curated-site-gallery .tile img,.finish-gallery-main .tile img{height:auto!important;max-height:none!important;object-fit:contain!important;background:#111!important;}
 .finish-gallery-main .tile{cursor:default}.finish-gallery-main .tile:hover img{transform:none!important}
-</style></head>
+</style>
+<style id="v21-stone-hero-final">
+/* V21 — FINAL: exact stone-house photo + compact normal-size hero typography */
+.hero{
+  min-height:760px!important;
+  height:min(760px,100vh)!important;
+  max-height:760px!important;
+  position:relative!important;
+  overflow:hidden!important;
+  padding:0!important;
+  display:block!important;
+  background:#0a0a09!important;
+}
+.hero-media{
+  position:absolute!important;inset:0!important;z-index:0!important;
+  width:100%!important;height:100%!important;overflow:hidden!important;
+}
+.hero-media img{
+  display:block!important;width:100%!important;height:100%!important;
+  object-fit:cover!important;object-position:center center!important;
+}
+.hero-overlay{
+  position:absolute!important;inset:0!important;z-index:1!important;display:block!important;
+  background:linear-gradient(90deg,rgba(0,0,0,.66) 0%,rgba(0,0,0,.40) 42%,rgba(0,0,0,.12) 78%,rgba(0,0,0,.04) 100%),linear-gradient(0deg,rgba(0,0,0,.38),transparent 55%)!important;
+}
+.hero-content{
+  position:relative!important;z-index:2!important;
+  width:min(calc(100% - 72px),var(--max))!important;height:100%!important;margin:0 auto!important;
+  display:flex!important;align-items:center!important;padding:90px 0 55px!important;
+}
+.hero-copy-box{
+  display:block!important;max-width:600px!important;padding:22px 26px 24px!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  background:rgba(7,7,7,.42)!important;
+  box-shadow:none!important;backdrop-filter:blur(2px)!important;-webkit-backdrop-filter:blur(2px)!important;
+}
+.hero h1{
+  font-size:clamp(42px,3.4vw,54px)!important;
+  line-height:1.03!important;margin:14px 0 18px!important;max-width:560px!important;
+}
+.hero-copy{
+  font-size:15px!important;line-height:1.55!important;max-width:520px!important;
+  color:#f0ece4!important;margin:0 0 24px!important;
+}
+.hero-trust{display:none!important;}
+.hero-scroll{z-index:3!important;}
+@media(max-width:900px){
+  .hero{min-height:700px!important;height:82vh!important;max-height:760px!important;}
+  .hero-content{width:min(calc(100% - 36px),var(--max))!important;padding:88px 0 42px!important;align-items:flex-end!important;}
+  .hero-overlay{background:linear-gradient(180deg,rgba(0,0,0,.16) 0%,rgba(0,0,0,.20) 30%,rgba(0,0,0,.72) 100%)!important;}
+  .hero-copy-box{max-width:100%!important;padding:20px!important;}
+  .hero h1{font-size:clamp(40px,7.5vw,54px)!important;max-width:650px!important;}
+  .hero-copy{font-size:15px!important;max-width:620px!important;}
+}
+@media(max-width:520px){
+  .hero{min-height:680px!important;height:88vh!important;max-height:740px!important;}
+  .hero-content{width:calc(100% - 24px)!important;padding:78px 0 24px!important;}
+  .hero-copy-box{padding:17px 16px 18px!important;}
+  .hero h1{font-size:40px!important;margin:12px 0 16px!important;}
+  .hero-copy{font-size:14px!important;margin-bottom:20px!important;}
+  .actions{gap:8px!important;}
+  .btn{padding:14px 16px!important;font-size:12px!important;}
+}
+</style>
+</head>
 <body>
 <header class="header" id="header">
   <a href="#top" aria-label="Домстрой"><img class="logo" src="logo-domstroy-light.png" alt="Домстрой"></a>
@@ -1100,7 +1164,7 @@ html,body{overflow-x:hidden}
 </div>
 <main id="top">
 <section class="hero">
-  <div class="hero-media" aria-hidden="true"><img src="1000024767.jpg" alt="Современный кирпичный дом Домстрой"></div>
+  <div class="hero-media" aria-hidden="true"><img src="1000024725.jpg" alt="Современный каменный дом Домстрой"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-copy-box">

@@ -1725,7 +1725,7 @@ p {
 @media(max-width:900px){.finish-wrap{grid-template-columns:1fr;gap:35px}.finish-single-image{max-width:560px;max-height:500px}.finish-single-image img{max-height:500px}.finish-side{max-width:560px}.finish-side h2{font-size:clamp(36px,7vw,52px)}}
 @media(max-width:520px){.finish-section{padding-top:65px;padding-bottom:65px}.finish-single-image{max-height:420px}.finish-single-image img{max-height:420px}.finish-side h2{font-size:38px}}
 
-/* V20 — stone-house hero: show the actual house photo as the hero, with compact readable copy */
+/* V21 — stone-house hero: show the actual house photo as the hero, with compact readable copy */
 .hero{
   min-height:calc(100vh - 0px)!important;
   height:min(900px,100vh)!important;
@@ -1779,7 +1779,7 @@ p {
   -webkit-backdrop-filter:none!important;
 }
 .hero h1{
-  font-size:clamp(42px,4.2vw,64px)!important;
+  font-size:clamp(42px,3.4vw,54px)!important;
   line-height:1.02!important;
   margin:18px 0 22px!important;
   max-width:620px!important;
