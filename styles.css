@@ -1712,3 +1712,15 @@ p {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* V18.1 — компактная подача чистовой отделки каркасного дома */
+.finish-section{background:#10100e;color:#f2eee6;padding-top:90px;padding-bottom:90px}
+.finish-wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:70px;align-items:center}
+.finish-single-image{width:100%;max-width:760px;max-height:560px;margin:0 auto;background:#171715;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.finish-single-image img{display:block;width:auto;max-width:100%;height:auto;max-height:560px;object-fit:contain}
+.finish-side{max-width:500px}
+.finish-side h2{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(38px,4vw,58px);line-height:1.04;margin:14px 0 22px}
+.finish-side p{font-size:15px;line-height:1.7;color:#bcb7ad;max-width:430px}
+.finish-caption{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:12px;line-height:1.6;color:#8f8a80;max-width:390px}
+@media(max-width:900px){.finish-wrap{grid-template-columns:1fr;gap:35px}.finish-single-image{max-width:560px;max-height:500px}.finish-single-image img{max-height:500px}.finish-side{max-width:560px}.finish-side h2{font-size:clamp(36px,7vw,52px)}}
+@media(max-width:520px){.finish-section{padding-top:65px;padding-bottom:65px}.finish-single-image{max-height:420px}.finish-single-image img{max-height:420px}.finish-side h2{font-size:38px}}
