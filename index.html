@@ -581,6 +581,116 @@ html,body{overflow-x:hidden}
 <noscript><div><img src="https://mc.yandex.ru/watch/113100776" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
+<style>
+/* HERO V11 — text separated from photo for clearer presentation */
+@media (min-width: 901px) {
+  .hero {
+    min-height: 100vh;
+    height: 900px;
+    max-height: none;
+    display: grid;
+    grid-template-columns: minmax(430px, 46%) minmax(0, 54%);
+    align-items: stretch;
+    padding-top: 84px;
+    background: #0a0a09;
+  }
+  .hero-media {
+    position: relative;
+    inset: auto;
+    grid-column: 2;
+    grid-row: 1;
+    height: 100%;
+    overflow: hidden;
+  }
+  .hero-media:after { display: none; }
+  .hero-media picture,
+  .hero-media picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .hero-media picture img {
+    object-fit: cover;
+    object-position: center;
+  }
+  .hero-content {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    z-index: 2;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 70px clamp(38px, 5vw, 82px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #0a0a09;
+    border-right: 1px solid rgba(255,255,255,.10);
+  }
+  .hero h1 {
+    max-width: 650px;
+    margin: 18px 0 26px;
+  }
+  .hero-copy { max-width: 590px; }
+  .hero-trust {
+    max-width: 650px;
+    margin-top: 42px;
+  }
+  .hero-scroll { right: 24px; bottom: 28px; color: rgba(255,255,255,.6); }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: auto;
+    max-height: none;
+    padding-top: 72px;
+    background: #0a0a09;
+    align-items: stretch;
+  }
+  .hero-content {
+    order: 1;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 58px 22px 48px;
+    display: block;
+    background: #0a0a09;
+  }
+  .hero-media {
+    order: 2;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: 58vw;
+    min-height: 360px;
+    max-height: 620px;
+  }
+  .hero-media:after { display: none; }
+  .hero-media picture,
+  .hero-media picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .hero-media picture img { object-fit: cover; object-position: center; }
+  .hero h1 { margin: 12px 0 20px; }
+  .hero-copy { max-width: 680px; }
+  .hero-trust { margin-top: 32px; }
+  .hero-scroll { display: none; }
+}
+
+@media (max-width: 520px) {
+  .hero-content { padding: 42px 18px 36px; }
+  .hero-media { height: 78vw; min-height: 300px; max-height: 480px; }
+  .hero h1 { font-size: clamp(42px, 11vw, 54px); line-height: .98; }
+  .hero-copy { font-size: 14px; line-height: 1.55; }
+  .hero-trust { margin-top: 30px; }
+}
+</style>
 </head>
 <body>
 <header class="header" id="header">
