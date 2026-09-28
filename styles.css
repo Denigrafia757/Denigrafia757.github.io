@@ -1712,3 +1712,8 @@ p {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Phone number is kept only in action links; it is not displayed as text. */
+.whatsapp-btn{white-space:nowrap;}
+.footer-col a + a{margin-left:14px;}
+@media(max-width:520px){.footer-col a + a{margin-left:10px;}}
