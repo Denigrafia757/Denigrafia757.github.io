@@ -1,4 +1,2 @@
-Domstroy site archive
-Version: v27
-Final cleaned build after removing unused photos and obsolete resources.
-All active local resource paths verified after cleanup.
+V28
+Full-bleed hero redesign: home photo across entire hero, smaller readable gold heading with blue outline, no black panel.
