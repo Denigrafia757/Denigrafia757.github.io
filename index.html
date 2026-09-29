@@ -1069,87 +1069,8 @@ html,body{overflow-x:hidden}
   .hero-media:after { display:none !important; }
 }
 </style>
-<style id="v15-final-hero-fix">
-/* V15 FINAL — fullscreen hero with text over image */
-.hero{min-height:100vh!important;height:100vh!important;max-height:none!important;display:block!important;position:relative!important;overflow:hidden!important;padding:0!important;background:#0a0a09!important;}
-.hero-media{position:absolute!important;inset:0!important;z-index:0!important;width:100%!important;height:100%!important;overflow:hidden!important;grid-column:auto!important;grid-row:auto!important;}
-.hero-media img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;}
-.hero-media:after{display:none!important;}
-.hero-overlay{position:absolute!important;inset:0!important;z-index:1!important;display:block!important;background:linear-gradient(90deg,rgba(0,0,0,.64) 0%,rgba(0,0,0,.36) 45%,rgba(0,0,0,.10) 78%),linear-gradient(0deg,rgba(0,0,0,.46),transparent 52%)!important;}
-.hero-content{position:relative!important;z-index:2!important;width:min(calc(100% - 64px),var(--max))!important;height:100%!important;margin:0 auto!important;display:flex!important;align-items:center!important;padding:95px 0 55px!important;}
-.hero-copy-box{display:block!important;max-width:650px!important;padding:24px 28px 28px!important;border:1px solid rgba(255,255,255,.20)!important;background:rgba(7,7,7,.26)!important;box-shadow:0 18px 55px rgba(0,0,0,.25)!important;backdrop-filter:blur(2px)!important;-webkit-backdrop-filter:blur(2px)!important;}
-.hero h1{font-size:clamp(44px,4.8vw,72px)!important;line-height:.98!important;margin:18px 0!important;}
-.hero-copy{font-size:16px!important;max-width:540px!important;color:#f0ece4!important;margin:0 0 30px!important;}
-.hero-trust{display:none!important;}
-@media(max-width:900px){.hero{min-height:760px!important;height:86vh!important}.hero-content{width:min(calc(100% - 36px),var(--max))!important;height:100%!important;padding:88px 0 42px!important;align-items:flex-end!important}.hero-copy-box{max-width:100%!important;padding:20px!important;background:rgba(7,7,7,.38)!important}.hero h1{font-size:clamp(50px,10vw,78px)!important}.hero-copy{font-size:15px!important}}
-@media(max-width:520px){.hero{min-height:700px!important;height:88vh!important}.hero-content{width:calc(100% - 24px)!important;padding:78px 0 24px!important}.hero-copy-box{padding:17px 16px 18px!important}.hero h1{font-size:46px!important;margin:16px 0!important}.hero-copy{font-size:14px!important;margin-bottom:22px!important}.actions{gap:8px!important}.btn{padding:14px 16px!important;font-size:12px!important}}
-/* No cropping for curated photo galleries */
-.curated-site-gallery .tile img,.finish-gallery-main .tile img{height:auto!important;max-height:none!important;object-fit:contain!important;background:#111!important;}
-.finish-gallery-main .tile{cursor:default}.finish-gallery-main .tile:hover img{transform:none!important}
-</style>
-<style id="v21-stone-hero-final">
-/* V21 — FINAL: exact stone-house photo + compact normal-size hero typography */
-.hero{
-  min-height:760px!important;
-  height:min(760px,100vh)!important;
-  max-height:760px!important;
-  position:relative!important;
-  overflow:hidden!important;
-  padding:0!important;
-  display:block!important;
-  background:#0a0a09!important;
-}
-.hero-media{
-  position:absolute!important;inset:0!important;z-index:0!important;
-  width:100%!important;height:100%!important;overflow:hidden!important;
-}
-.hero-media img{
-  display:block!important;width:100%!important;height:100%!important;
-  object-fit:cover!important;object-position:center center!important;
-}
-.hero-overlay{
-  position:absolute!important;inset:0!important;z-index:1!important;display:block!important;
-  background:linear-gradient(90deg,rgba(0,0,0,.66) 0%,rgba(0,0,0,.40) 42%,rgba(0,0,0,.12) 78%,rgba(0,0,0,.04) 100%),linear-gradient(0deg,rgba(0,0,0,.38),transparent 55%)!important;
-}
-.hero-content{
-  position:relative!important;z-index:2!important;
-  width:min(calc(100% - 72px),var(--max))!important;height:100%!important;margin:0 auto!important;
-  display:flex!important;align-items:center!important;padding:90px 0 55px!important;
-}
-.hero-copy-box{
-  display:block!important;max-width:600px!important;padding:22px 26px 24px!important;
-  border:1px solid rgba(255,255,255,.18)!important;
-  background:rgba(7,7,7,.42)!important;
-  box-shadow:none!important;backdrop-filter:blur(2px)!important;-webkit-backdrop-filter:blur(2px)!important;
-}
-.hero h1{
-  font-size:clamp(42px,3.4vw,54px)!important;
-  line-height:1.03!important;margin:14px 0 18px!important;max-width:560px!important;
-}
-.hero-copy{
-  font-size:15px!important;line-height:1.55!important;max-width:520px!important;
-  color:#f0ece4!important;margin:0 0 24px!important;
-}
-.hero-trust{display:none!important;}
 
-@media(max-width:900px){
-  .hero{min-height:700px!important;height:82vh!important;max-height:760px!important;}
-  .hero-content{width:min(calc(100% - 36px),var(--max))!important;padding:88px 0 42px!important;align-items:flex-end!important;}
-  .hero-overlay{background:linear-gradient(180deg,rgba(0,0,0,.16) 0%,rgba(0,0,0,.20) 30%,rgba(0,0,0,.72) 100%)!important;}
-  .hero-copy-box{max-width:100%!important;padding:20px!important;}
-  .hero h1{font-size:clamp(40px,7.5vw,54px)!important;max-width:650px!important;}
-  .hero-copy{font-size:15px!important;max-width:620px!important;}
-}
-@media(max-width:520px){
-  .hero{min-height:680px!important;height:88vh!important;max-height:740px!important;}
-  .hero-content{width:calc(100% - 24px)!important;padding:78px 0 24px!important;}
-  .hero-copy-box{padding:17px 16px 18px!important;}
-  .hero h1{font-size:40px!important;margin:12px 0 16px!important;}
-  .hero-copy{font-size:14px!important;margin-bottom:20px!important;}
-  .actions{gap:8px!important;}
-  .btn{padding:14px 16px!important;font-size:12px!important;}
-}
-</style>
+
 <style id="v24-hero-image-visible">
 /* V24 — show the house photo cleanly; remove the opaque pseudo overlay */
 .hero{
@@ -1179,15 +1100,45 @@ html,body{overflow-x:hidden}
 }
 .hero-content{z-index:2 !important;}
 </style>
+
+<style id="v25-new-media-sections">
+/* V25 — реальные видеообзоры и дополнительный реализованный дом */
+.real-house-feature{background:#10100e;color:#f2eee6;padding:92px 0}
+.real-house-feature .real-house-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.real-house-feature .real-house-image{overflow:hidden;background:#171613;border:1px solid rgba(255,255,255,.10)}
+.real-house-feature .real-house-image img{width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover}
+.real-house-feature .real-house-copy h2{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(40px,4.5vw,64px);line-height:1.02;margin:14px 0 22px}
+.real-house-feature .real-house-copy p{color:#bcb7ae;max-width:500px;font-size:15px;line-height:1.7}
+.real-house-feature .real-house-copy .kicker{color:var(--gold2)}
+.house-video-section{background:#0a0a09;color:#f2eee6;padding:96px 0}
+.house-video-section .section-head{margin-bottom:38px}
+.house-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.house-video-card{border:1px solid rgba(255,255,255,.12);background:#11110f;overflow:hidden}
+.house-video-card video{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#050505}
+.house-video-card .house-video-copy{padding:20px 20px 22px}
+.house-video-card .house-video-copy .kicker{margin-bottom:8px}
+.house-video-card h3{font-family:"Playfair Display",serif;font-size:25px;font-weight:500;margin:0 0 8px}
+.house-video-card p{font-size:12px;color:#aaa69d;margin:0;line-height:1.6}
+@media(max-width:900px){
+ .real-house-feature .real-house-grid{grid-template-columns:1fr;gap:30px}
+ .house-video-grid{grid-template-columns:1fr}
+ .real-house-feature,.house-video-section{padding:72px 0}
+}
+
+/* V27 — gallery images keep their full framing */
+.curated-site-gallery .tile img,.finish-gallery-main .tile img{height:auto!important;max-height:none!important;object-fit:contain!important;background:#111!important;}
+.finish-gallery-main .tile{cursor:default}.finish-gallery-main .tile:hover img{transform:none!important}
+</style>
+
 </head>
 <body>
 <header class="header" id="header">
   <a href="#top" aria-label="Домстрой"><img class="logo" src="logo-domstroy-light.png" alt="Домстрой"></a>
-  <nav class="nav"><a href="#projects">Проекты</a><a href="karkasnye-doma.html">Каркасные дома</a><a href="#interiors">Интерьеры</a><a href="#process">Этапы</a><a href="#construction">Видео</a><a href="#finance">Финансирование</a><a href="#faq">FAQ</a></nav>
+  <nav class="nav"><a href="#projects">Проекты</a><a href="karkasnye-doma.html">Каркасные дома</a><a href="#interiors">Интерьеры</a><a href="#process">Этапы</a><a href="#construction">Видеообзоры</a><a href="#finance">Финансирование</a><a href="#faq">FAQ</a></nav>
   <a class="head-cta js-lead" href="#contact">Получить расчёт</a><button class="burger" aria-label="Меню">☰</button>
 </header>
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <a href="#projects">Проекты</a><a href="karkasnye-doma.html">Каркасные дома</a><a href="#interiors">Интерьеры</a><a href="#process">Этапы</a><a href="#construction">Видео</a><a href="#finance">Финансирование</a><a href="#faq">FAQ</a><a class="js-lead" href="#contact">Получить расчёт →</a>
+  <a href="#projects">Проекты</a><a href="karkasnye-doma.html">Каркасные дома</a><a href="#interiors">Интерьеры</a><a href="#process">Этапы</a><a href="#construction">Видеообзоры</a><a href="#finance">Финансирование</a><a href="#faq">FAQ</a><a class="js-lead" href="#contact">Получить расчёт →</a>
 </div>
 <main id="top">
 <section class="hero">
@@ -1212,6 +1163,8 @@ html,body{overflow-x:hidden}
 <figure class="tile"><img loading="lazy" src="real-brick-evening-snow.jpg" alt="Кирпичный дом зимой"></figure>
 <figure class="tile"><img loading="lazy" src="real-sunset-field-brick.jpg" alt="Кирпичный загородный дом"></figure>
 <figure class="tile"><img loading="lazy" src="1000024766.jpg" alt="Современный загородный дом с отделкой фасада"></figure>
+<figure class="tile"><img loading="lazy" src="real-house-domstroy-01.jpg" alt="Реализованный загородный дом Домстрой"></figure>
+<figure class="tile"><img loading="lazy" src="real-house-domstroy-02.jpg" alt="Фасад реализованного загородного дома Домстрой"></figure>
 </div></div></section>
 <section class="section" id="interiors"><div class="split"><div class="split-image"><img loading="lazy" src="1000024780.jpg" alt="Гостиная каменного дома после чистовой отделки"></div><div class="split-copy"><div class="kicker">04 / ИНТЕРЬЕРЫ И ОТДЕЛКА</div><h2>Чистовая отделка,<br><em>которую видно в деталях.</em></h2><p>Показываем реальные интерьеры домов после строительства: чистовая отделка, свет, инженерия, лестницы, кухня-гостиная и детали, которыми пользуются каждый день.</p><ul class="checks"><li>Чистовая и предчистовая отделка</li><li>Продуманные планировки и освещение</li><li>Работа с материалами и деталями</li><li>Инженерные решения внутри дома</li></ul><a class="btn btn-outline" href="#gallery">Смотреть отделку</a></div></div></section>
 <section class="section dark" id="gallery"><div class="container"><div class="section-head"><div><div class="kicker">05 / ЧИСТОВАЯ ОТДЕЛКА</div><h2>Чистовая отделка<br><em>каменного дома.</em></h2></div></div>
@@ -1235,7 +1188,28 @@ html,body{overflow-x:hidden}
 <article class="step"><b>05</b><h3>Строительство</h3><p>Строим дом по согласованному проекту и комплектации, последовательно выполняя этапы работ.</p></article>
 <article class="step"><b>06</b><h3>Готовый дом</h3><p>Завершаем согласованный объём работ и передаём дом заказчику.</p></article>
 </div></div></section>
-<section class="section video-section" id="construction"><div class="container"><div class="section-head"><div><div class="kicker">07 / В РЕАЛЬНОМ ПРОЦЕССЕ</div><h2>Не только готовый дом.<br><em>Показываем путь.</em></h2></div><p>Фото показывают результат, а видео — сам процесс. Так проще понять, как организована стройка и за что отвечает команда.</p></div><div class="video-wrap"><video controls playsinline preload="metadata" poster="1000024720.jpg"><source src="real-project-video.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video><div class="video-overlay"></div><div class="video-copy"><div class="kicker">РЕАЛЬНЫЙ ПРОЕКТ</div><h2>Строительство<br><em>в движении.</em></h2><p>Посмотрите фрагменты строительного процесса и готовых решений.</p></div></div></div></section>
+<section class="house-video-section" id="construction">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">07 / ВИДЕООБЗОРЫ ДОМОВ</div><h2>Смотрите дома<br><em>вживую.</em></h2></div>
+      <p>Три полных видеообзора реальных домов. Без постановочных рендеров — показываем планировку, помещения, фасад и детали готовых объектов.</p>
+    </div>
+    <div class="house-video-grid">
+      <article class="house-video-card">
+        <video controls playsinline preload="metadata" poster="video-house-tour-1.jpg"><source src="video-house-tour-1.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video>
+        <div class="house-video-copy"><div class="kicker">ОБЗОР ДОМА · 01</div><h3>Полный обзор дома</h3><p>Реальный объект: планировка, помещения и общая подача дома.</p></div>
+      </article>
+      <article class="house-video-card">
+        <video controls playsinline preload="metadata" poster="video-house-tour-2.jpg"><source src="video-house-tour-2.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video>
+        <div class="house-video-copy"><div class="kicker">ОБЗОР ДОМА · 02</div><h3>Короткий обзор объекта</h3><p>Быстрый просмотр готового дома и его ключевых решений.</p></div>
+      </article>
+      <article class="house-video-card">
+        <video controls playsinline preload="metadata" poster="video-house-tour-3.jpg"><source src="video-house-tour-3.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video>
+        <div class="house-video-copy"><div class="kicker">ОБЗОР ДОМА · 03</div><h3>Обзор готового дома</h3><p>Реальный объект с показом помещений и основных особенностей.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
 <section class="lead-strip"><div class="container lead-strip-inner"><div><strong>Есть участок или только идея?</strong><br><span>Есть участок — проверим его. Нет участка — поможем подобрать. Подберём проект и рассчитаем строительство.</span></div><a class="btn btn-dark js-lead" href="#contact">Обсудить проект →</a></div></section>
 <section class="section finance" id="finance"><div class="container finance-grid"><div><div class="kicker">08 / ФИНАНСИРОВАНИЕ</div><h2>Финансирование дома<br><em>начинается с понятного расчёта.</em></h2></div><div><p class="finance-copy">Разбираем проект, участок и исходные данные, после чего помогаем понять, какие варианты финансирования можно рассмотреть. Конкретные условия зависят от программы и решения банка.</p><div class="finance-list"><div class="finance-item"><b>01</b><div><strong>Индивидуальный расчёт</strong><span>Считаем стоимость под конкретный проект, площадь и комплектацию.</span></div></div><div class="finance-item"><b>02</b><div><strong>Ипотека</strong><span>Помогаем разобраться с доступными ипотечными программами и подготовить проект к подаче.</span></div></div><div class="finance-item"><b>03</b><div><strong>Собственные средства</strong><span>Подбираем объём работ и комплектацию под выбранный формат финансирования.</span></div></div></div></div></div></section>
 <section class="quote"><img loading="lazy" src="real-brick-evening-snow.jpg" alt="Кирпичный загородный дом зимой"><div class="container quote-inner"><div class="kicker">ДОМ — ЭТО БОЛЬШЕ, ЧЕМ КВАДРАТНЫЕ МЕТРЫ</div><h2>Дом — это пространство<br><em>для жизни семьи.</em></h2><p>Поэтому важны не только фасад и планировка. Важны свет, тепло, хранение, инженерия и удобство, которыми семья будет пользоваться каждый день.</p></div></section>

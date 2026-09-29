@@ -77,6 +77,25 @@
 /* V17 — реальная чистовая отделка каркасного дома одним цельным коллажем */
 .finish-single{max-width:1200px;margin:0 auto}.finish-single-head{margin-bottom:28px}.finish-single-head h2{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(40px,4.5vw,64px);line-height:1.03;margin:14px 0 0}.finish-single-image{width:100%;background:#111;overflow:hidden}.finish-single-image img{display:block;width:100%;height:auto;object-fit:contain}
 </style>
+
+<style id="v25-whitebox-section">
+/* V25 — White Box: тёмная подача, изображение не на весь экран */
+.whitebox-section{background:#0d0d0c;color:#f1eee7;padding:92px 0}
+.whitebox-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:64px;align-items:center}
+.whitebox-gallery{display:grid;grid-template-columns:1.25fr .75fr;gap:10px;max-width:760px}
+.whitebox-gallery figure{margin:0;background:#171613;overflow:hidden;border:1px solid rgba(255,255,255,.10)}
+.whitebox-gallery figure:first-child{grid-row:span 2}
+.whitebox-gallery img{width:100%;height:100%;object-fit:cover;min-height:220px}
+.whitebox-copy h2{font-family:"Playfair Display",serif;font-size:clamp(40px,4.5vw,64px);line-height:1.03;font-weight:500;margin:14px 0 20px}
+.whitebox-copy p{color:#bcb7ae;max-width:500px;font-size:15px;line-height:1.7}
+.whitebox-copy .kicker{color:var(--gold2)}
+.whitebox-list{list-style:none;padding:0;margin:28px 0 0;border-top:1px solid rgba(255,255,255,.12)}
+.whitebox-list li{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:13px;color:#d8d3ca}
+.whitebox-list li:before{content:'✓';color:var(--gold2);margin-right:10px}
+@media(max-width:900px){.whitebox-grid{grid-template-columns:1fr;gap:34px}.whitebox-gallery{max-width:none}.whitebox-section{padding:72px 0}}
+@media(max-width:520px){.whitebox-gallery{grid-template-columns:1fr}.whitebox-gallery figure:first-child{grid-row:auto}.whitebox-gallery img{min-height:0;height:auto}.whitebox-copy h2{font-size:40px}}
+</style>
+
 </head>
 <body>
 <header class="header"><a href="index.html" aria-label="Домстрой"><img class="logo" src="logo-domstroy-light.png" alt="Домстрой"></a><nav class="nav"><a href="index.html">Главная</a><a href="karkasnye-doma.html">Каркасные дома</a><a href="index.html#projects">Проекты</a><a href="index.html#process">Этапы</a><a href="index.html#finance">Финансирование</a></nav><a class="head-cta" href="https://wa.me/79173337928" target="_blank" rel="noopener">Написать</a><button class="burger" onclick="document.querySelector('.nav').classList.toggle('mobile')">☰</button></header>
@@ -92,7 +111,25 @@
 
 <section class="section plan-section"><div class="container plan-wrap"><div class="plan-image"><img src="project-plan72-layout.jpg" alt="Планировка каркасного дома с двумя спальнями и кухней-гостиной" /></div><div class="plan-copy"><div class="kicker">03 / ПЛАНИРОВКА</div><h2>Продуманное пространство для семьи.</h2><p>Показываем конкретный вариант планировки: просторная кухня-гостиная, две отдельные спальни, санузел, техническое помещение, холл и тамбур. Планировку можно адаптировать под участок и ваши задачи.</p><ul class="plan-points"><li>Большая кухня-гостиная — 26,7 м²</li><li>Две отдельные спальни</li><li>Санузел и техническая зона</li><li>Холл и отдельный тамбур</li><li>Крыльцо для комфортного входа в дом</li></ul><div class="actions"><a class="btn btn-gold" href="https://wa.me/79173337928" target="_blank" rel="noopener">Обсудить планировку →</a></div></div></div></section>
 
-<section class="section finish-section"><div class="container finish-wrap"><div class="finish-single-image"><img src="real-frame-finish-collage.jpg" alt="Чистовая отделка каркасного дома" /></div><div class="finish-side"><div class="kicker">04 / ЧИСТОВАЯ ОТДЕЛКА</div><h2>Чистовая отделка каркасного дома.</h2><p>Готовый интерьер с чистовой отделкой: стены, напольные покрытия, санузлы, кухня и освещение.</p><div class="finish-caption">Отделка выполняется как часть комплектации дома.</div></div></div></section>
+<section class="whitebox-section" id="whitebox">
+  <div class="container whitebox-grid">
+    <div class="whitebox-gallery">
+      <figure><img loading="lazy" src="whitebox-01.jpg" alt="White Box — чистая отделка каркасного дома"></figure>
+      <figure><img loading="lazy" src="whitebox-02.jpg" alt="White Box — готовые помещения дома"></figure>
+      <figure><img loading="lazy" src="whitebox-03.jpg" alt="White Box — помещение перед чистовой отделкой"></figure>
+    </div>
+    <div class="whitebox-copy">
+      <div class="kicker">04 / WHITE BOX</div>
+      <h2>White Box — готовая база<br><em>для вашей отделки.</em></h2>
+      <p>Показываем реальный White Box: ровные стены и потолки, готовые оконные и дверные проёмы, инженерные выводы и подготовленные помещения перед чистовой отделкой.</p>
+      <ul class="whitebox-list">
+        <li>Реальный объект, а не визуализация</li>
+        <li>Подготовленные помещения под чистовую отделку</li>
+        <li>Можно выбрать собственный стиль интерьера</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <section class="section"><div class="container"><div class="section-head"><div><div class="kicker">05 / КАК НАЧАТЬ</div><h2>Понятный путь<br>к вашему дому.</h2></div><p>Не нужно заранее разбираться во всех технических деталях. Поможем выбрать решение, проверить участок, разобраться с ипотекой и построим дом по согласованной комплектации.</p></div><div class="steps">
 <div class="step"><div class="step-num">01</div><strong>Подбираем проект</strong><span>Определяем площадь, планировку и архитектуру под ваши задачи.</span></div>

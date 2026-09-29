@@ -1,0 +1,4 @@
+Domstroy site archive
+Version: v27
+Final cleaned build after removing unused photos and obsolete resources.
+All active local resource paths verified after cleanup.
